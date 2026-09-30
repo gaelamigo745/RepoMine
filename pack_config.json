@@ -1,0 +1,12 @@
+{
+  "pack_name": "Servidor Gael",
+  "minecraft_version": "1.21.1",
+  "loader": "NeoForge",
+  "loader_version": "21.1.233",
+  "repo_owner": "Qmigo745",
+  "repo_name": "RepoMine",
+  "branch": "main",
+  "server_name": "Servidor Gael",
+  "server_address": "tecserver.playit.plus",
+  "config_policies": {}
+}

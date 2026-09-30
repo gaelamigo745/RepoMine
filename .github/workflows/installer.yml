@@ -1,0 +1,73 @@
+name: Compilar instalador
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '*.py'
+      - '*.spec'
+      - 'requirements*.txt'
+      - 'build.ps1'
+      - 'tests/**'
+      - '.github/workflows/installer.yml'
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-build.txt
+      - name: Comprobar versión del tag
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: python
+        run: |
+          import ast
+          import os
+          from pathlib import Path
+          tree = ast.parse(Path('instalador_mods_github.py').read_text(encoding='utf-8-sig'))
+          version = next(ast.literal_eval(node.value) for node in tree.body
+                         if isinstance(node, ast.Assign)
+                         and any(isinstance(target, ast.Name) and target.id == 'APP_VERSION'
+                                 for target in node.targets))
+          expected = 'v' + version
+          if os.environ['GITHUB_REF_NAME'] != expected:
+              raise SystemExit(f'El tag debe ser {expected}')
+      - name: Verificar y compilar
+        shell: pwsh
+        run: ./build.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: InstaladorModsMinecraft
+          path: |
+            dist/InstaladorModsMinecraft.exe
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: InstaladorModsMinecraft
+          path: dist
+      - name: Publicar versión
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" dist/InstaladorModsMinecraft.exe dist/SHA256SUMS.txt --verify-tag --generate-notes

@@ -1,0 +1,15 @@
+# Archivo personal para transportar mods
+/mods.zip
+*.disable
+__pycache__/
+*.py[cod]
+.venv/
+.venv-build/
+.tools/
+build/
+dist/
+*.download
+*.update.exe
+*.tmp
+.repomine/
+/installer_settings.json

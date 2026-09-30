@@ -1,0 +1,4 @@
+certifi==2025.1.31
+minecraft-launcher-lib==8.0
+nbtlib==2.0.4
+
