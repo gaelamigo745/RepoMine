@@ -24,19 +24,21 @@ La sesión se conserva únicamente en memoria mientras el instalador está abier
 
 Por ahora cada instalación debe introducir el ID público y la redirección en Configuración. El administrador puede compartir esos dos valores; todavía no se incluyen automáticamente como valores predeterminados del EXE ni del manifiesto.
 
+El código, las dependencias, las pruebas y la especificación de compilación están en `launcher/`. El pack conserva sus rutas en la raíz; las Releases existentes mantienen sus archivos.
+
 ## Qué hace cada archivo
 
 | Archivo | Responsabilidad |
 | --- | --- |
 | `generar_manifest.py` | Administrar el pack, generar su catálogo y publicar archivos mediante Git. |
-| `instalador_mods_github.py` | Interfaz para verificar, preparar y actualizar el pack. |
-| `repomine_core.py` | Validación, SHA-256, descargas y seguimiento de archivos administrados. |
-| `repomine_runtime.py` | Preparación del juego, Java y NeoForge; perfil, servidor y autenticación. |
+| `launcher/instalador_mods_github.py` | Interfaz para verificar, preparar y actualizar el pack. |
+| `launcher/repomine_core.py` | Validación, SHA-256, descargas y seguimiento de archivos administrados. |
+| `launcher/repomine_runtime.py` | Preparación del juego, Java y NeoForge; perfil, servidor y autenticación. |
 | `manifest.json` | Versiones, direcciones de descarga y hashes del pack. |
 | `pack_config.json` | Valores del servidor, versiones y políticas de configuración usados para generar el catálogo. |
 | `mods/` y `Resourcepacks/` | Archivos distribuidos a los jugadores. |
 | `shared-config/` | Configuraciones iniciales opcionales, instaladas en `config/`. |
-| `build.ps1` y `InstaladorModsMinecraft.spec` | Compilación del ejecutable de Windows. |
+| `build.ps1`, `launcher/build.ps1` y `launcher/InstaladorModsMinecraft.spec` | Compilación del ejecutable de Windows. |
 | `.github/workflows/installer.yml` | Compilación y publicación opcionales en GitHub Actions. |
 
 `mods.zip` es un archivo personal para transportar mods: se ignora en Git y no forma parte de la distribución. Puedes seguir utilizándolo.
@@ -59,9 +61,9 @@ Utiliza Python 3.11 o posterior; la compilación automatizada utiliza Python 3.1
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r launcher/requirements.txt
 .\.venv\Scripts\python.exe generar_manifest.py
-.\.venv\Scripts\python.exe instalador_mods_github.py
+.\.venv\Scripts\python.exe launcher/instalador_mods_github.py
 ```
 
 Para actualizar el pack, coloca los JAR en `mods/`, los ZIP de recursos en `Resourcepacks/` y las configuraciones compartidas opcionales en `shared-config/`. Genera y revisa el manifiesto antes de publicarlo:
@@ -71,7 +73,7 @@ Para actualizar el pack, coloca los JAR en `mods/`, los ZIP de recursos en `Reso
 git diff -- manifest.json
 ```
 
-La interfaz del administrador permite publicar. La alternativa por consola `--publish-all` genera, crea un commit y hace push del pack; úsala cuando quieras publicar los cambios. Requiere Git y acceso de escritura a `Qmigo745/RepoMine`. `--upload-manifest` y `--upload-mods` publican partes del pack por separado; evita dejar el manifiesto apuntando a archivos todavía no publicados.
+La interfaz del administrador permite publicar. La alternativa por consola `--publish-all` genera, crea un commit y hace push del pack; úsala cuando quieras publicar los cambios. Requiere Git y acceso de escritura a `gaelamigo745/RepoMine`. `--upload-manifest` y `--upload-mods` publican partes del pack por separado; evita dejar el manifiesto apuntando a archivos todavía no publicados.
 
 Los JAR pueden declarar varios IDs: el generador registra sus IDs declarados sin confundirlos con dependencias. La retirada de versiones en los clientes se basa en el registro de archivos, no en deducir identidades a partir de sus nombres.
 
@@ -83,20 +85,22 @@ La compilación manual sigue disponible:
 .\build.ps1
 ```
 
-El script crea `.venv-build/`, instala las dependencias, ejecuta las pruebas y construye:
+El script crea `launcher/.venv-build/`, instala las dependencias, ejecuta las pruebas y construye:
 
 - `dist/InstaladorModsMinecraft.exe`
 - `dist/SHA256SUMS.txt`
 
-Sube ambos archivos a la misma GitHub Release. Conserva esos nombres. El actualizador verifica el EXE mediante el campo SHA-256 `digest` que devuelve la API de GitHub para el archivo de la Release. Si GitHub no lo proporciona, obtiene `SHA256SUMS.txt` de esa misma Release y exige una única entrada válida con el nombre exacto `InstaladorModsMinecraft.exe`; sin ningún hash verificable, detiene la actualización. El checksum también sirve para comprobar descargas manuales. La versión del tag debe ser `v` seguida del valor de `APP_VERSION` en `instalador_mods_github.py`, por ejemplo `v1.1.0`. Incrementa esa constante al publicar una nueva versión del instalador; actualizar solamente los mods no necesita recompilarlo.
+Sube ambos archivos a la misma GitHub Release. Conserva esos nombres. El actualizador verifica el EXE mediante el campo SHA-256 `digest` que devuelve la API de GitHub para el archivo de la Release. Si GitHub no lo proporciona, obtiene `SHA256SUMS.txt` de esa misma Release y exige una única entrada válida con el nombre exacto `InstaladorModsMinecraft.exe`; sin ningún hash verificable, detiene la actualización. El checksum también sirve para comprobar descargas manuales. La versión del tag debe ser `v` seguida del valor de `APP_VERSION` en `launcher/instalador_mods_github.py`, por ejemplo `v1.1.0`. Incrementa esa constante al publicar una nueva versión del instalador; actualizar solamente los mods no necesita recompilarlo.
 
 Si PowerShell bloquea scripts por la política de tu equipo, puedes ejecutar los mismos pasos manualmente:
 
 ```powershell
+cd launcher
 python -m venv .venv-build
 .\.venv-build\Scripts\python.exe -m pip install -r requirements-build.txt
+$env:PYTHONPATH = "$PWD;$(Split-Path -Parent $PWD)"
 .\.venv-build\Scripts\python.exe -m unittest discover -s tests -v
-.\.venv-build\Scripts\python.exe -m PyInstaller --noconfirm --clean InstaladorModsMinecraft.spec
+.\.venv-build\Scripts\python.exe -m PyInstaller --noconfirm --clean --distpath ../dist --workpath ../build InstaladorModsMinecraft.spec
 ```
 
 En ese caso, genera también `SHA256SUMS.txt` con una línea `<sha256>  InstaladorModsMinecraft.exe`, en UTF-8, a partir del hash del EXE final. El ejecutable no tiene firma de código; la verificación SHA-256 comprueba integridad, pero no sustituye una firma del editor.
@@ -110,7 +114,8 @@ Al subir un tag `v*`, el workflow exige que coincida con `APP_VERSION`, ejecuta 
 ## Verificación y límites
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+$env:PYTHONPATH = "$PWD\launcher;$PWD"
+.\.venv\Scripts\python.exe -m unittest discover -s launcher/tests -v
 ```
 
 Antes de distribuir una versión, prueba el EXE en Windows con una carpeta de prueba y comprueba una instalación inicial, una actualización y el arranque con una cuenta válida. Las pruebas automatizadas no sustituyen una partida real ni verifican que todos los mods sean compatibles entre sí.

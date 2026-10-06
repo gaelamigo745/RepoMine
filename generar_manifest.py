@@ -11,7 +11,7 @@ import zipfile
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
-from repomine_core import mod_ids_from_jar, validate_manifest, atomic_json, safe_relative
+from launcher.repomine_core import mod_ids_from_jar, validate_manifest, atomic_json, safe_relative
 
 # ================= CONFIGURACIÓN =================
 

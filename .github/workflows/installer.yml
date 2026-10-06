@@ -4,11 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
-      - '*.py'
-      - '*.spec'
-      - 'requirements*.txt'
+      - 'launcher/**'
+      - 'generar_manifest.py'
       - 'build.ps1'
-      - 'tests/**'
       - '.github/workflows/installer.yml'
   push:
     tags: ['v*']
@@ -26,8 +24,8 @@ jobs:
           python-version: '3.12'
           cache: pip
           cache-dependency-path: |
-            requirements.txt
-            requirements-build.txt
+            launcher/requirements.txt
+            launcher/requirements-build.txt
       - name: Comprobar versión del tag
         if: startsWith(github.ref, 'refs/tags/')
         shell: python
@@ -35,7 +33,7 @@ jobs:
           import ast
           import os
           from pathlib import Path
-          tree = ast.parse(Path('instalador_mods_github.py').read_text(encoding='utf-8-sig'))
+          tree = ast.parse(Path('launcher/instalador_mods_github.py').read_text(encoding='utf-8-sig'))
           version = next(ast.literal_eval(node.value) for node in tree.body
                          if isinstance(node, ast.Assign)
                          and any(isinstance(target, ast.Name) and target.id == 'APP_VERSION'

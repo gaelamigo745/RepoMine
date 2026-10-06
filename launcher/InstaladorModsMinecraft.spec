@@ -1,4 +1,6 @@
-# Build from repository root using build.ps1.
+# Build using build.ps1 from any working directory.
+from pathlib import Path
+launcher_dir = Path(SPECPATH)
 from PyInstaller.utils.hooks import collect_all
 
 datas, binaries, hiddenimports = [], [], []
@@ -9,8 +11,8 @@ for package in ("certifi", "minecraft_launcher_lib", "nbtlib"):
     hiddenimports += package_imports
 
 a = Analysis(
-    ["instalador_mods_github.py"],
-    pathex=[],
+    [str(launcher_dir / "instalador_mods_github.py")],
+    pathex=[str(launcher_dir)],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
