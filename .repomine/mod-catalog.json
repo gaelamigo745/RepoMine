@@ -193,18 +193,18 @@
       "source_folder": "mods",
       "size": 763725,
       "sha256": "4f17d1a2b9fd6d18ddb7697aa451db7fb154053b8648f79de279ae0d7e68a2fa",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Zeta-1.1-40.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Zeta-1.1-40.jar"
+      "enabled": true
     },
     {
       "file": "aeroportals-1.21.1-1.3.3.jar",
       "source_folder": "mods",
       "size": 503895,
       "sha256": "6acf27b43647e5daa5e5fd2d99545a1cb459b30de410a936d9336aad2b447575",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/aeroportals-1.21.1-1.3.3.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/aeroportals-1.21.1-1.3.3.jar"
+      "enabled": true
     },
     {
       "id": "alexsmobs",
@@ -554,9 +554,9 @@
       "source_folder": "mods",
       "size": 1661802,
       "sha256": "41876c3780b70365a1848994d146a73423cc19fbe86485885795d9e7d855e7e9",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createaddition-1.6.0.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createaddition-1.6.0.jar"
+      "enabled": true
     },
     {
       "id": "aeronautics_curios_compat",
@@ -780,9 +780,9 @@
       "source_folder": "mods",
       "size": 478502,
       "sha256": "8992026957c77a37507052b628b93a58d3c3a4b1e303d0a4060bc305fb7c7a7c",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/integrated_api-neoforge-1.21.1-1.8.2.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/integrated_api-neoforge-1.21.1-1.8.2.jar"
+      "enabled": true
     },
     {
       "id": "interiors",
@@ -885,9 +885,9 @@
       "source_folder": "mods",
       "size": 2303727,
       "sha256": "0a755b1f5bfc40e1553c55471ebe42096eb537d5c7fa5fb6b5a5f145656604db",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/moonlight-1.21.1-3.7.1-neoforge.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/moonlight-1.21.1-3.7.1-neoforge.jar"
+      "enabled": true
     },
     {
       "id": "ntgl",
@@ -1440,6 +1440,15 @@
       "source_folder": "modsServer",
       "scope": "server",
       "enabled": true
+    },
+    {
+      "file": "MobileNetworks-4.0.0.jar",
+      "size": 1034915,
+      "sha256": "685a7e981def23d5fa1d6cb92ef149da7e8b5f628a805fe0f2b47dec1cae9f3a",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MobileNetworks-4.0.0.jar"
     }
   ]
 }

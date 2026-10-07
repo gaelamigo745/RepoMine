@@ -1203,6 +1203,13 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
       "sha256": "b5c30321b46cfaa521645a04aff89d2804d8167a25bb23ad4b1ae8da73093a2f",
       "source_folder": "modsCliente"
+    },
+    {
+      "file": "MobileNetworks-4.0.0.jar",
+      "size": 1034915,
+      "sha256": "685a7e981def23d5fa1d6cb92ef149da7e8b5f628a805fe0f2b47dec1cae9f3a",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MobileNetworks-4.0.0.jar"
     }
   ],
   "resourcepacks": [
