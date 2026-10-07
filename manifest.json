@@ -6,6 +6,163 @@
   "loader_version": "21.1.233",
   "mods": [
     {
+      "id": "biomesoplenty",
+      "ids": [
+        "biomesoplenty"
+      ],
+      "size": 22338081,
+      "file": "BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar",
+      "sha256": "6af75f8f41fb50a80945237930516542f5d9b5005334afdc41b393f58f18932a",
+      "source_folder": "mods"
+    },
+    {
+      "id": "create_dragons_plus",
+      "ids": [
+        "create_dragons_plus"
+      ],
+      "size": 1006723,
+      "file": "CreateDragonsPlus-1.11.2b.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CreateDragonsPlus-1.11.2b.jar",
+      "sha256": "9b15e464465a639de9ef5a935ae9fd94ea545904517d1428bc784a4012e0a1e2",
+      "source_folder": "mods"
+    },
+    {
+      "id": "dndecor",
+      "ids": [
+        "dndecor"
+      ],
+      "size": 6329899,
+      "file": "Design-n-Decor-1.21.1-2.2b.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Design-n-Decor-1.21.1-2.2b.jar",
+      "sha256": "af0264e8ba44b77744d9a6173b79fcc39758c5b975fbb377d4000e85bfcd2c8f",
+      "source_folder": "mods"
+    },
+    {
+      "id": "farmersdelight",
+      "ids": [
+        "farmersdelight"
+      ],
+      "size": 3163042,
+      "file": "FarmersDelight-1.21.1-1.3.2.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/FarmersDelight-1.21.1-1.3.2.jar",
+      "sha256": "8ff438d62e1fce61542945faae45975d823e04bd6e73a07a121ea05ce2f03de7",
+      "source_folder": "mods"
+    },
+    {
+      "id": "fokusapi",
+      "ids": [
+        "fokusapi"
+      ],
+      "size": 65846,
+      "file": "FokusAPI-v4.5_MOD.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/FokusAPI-v4.5_MOD.jar",
+      "sha256": "9bf3b32674797a7e61c42ffefd9ed2c1526ef16329fa6dd11c97a3d357a85723",
+      "source_folder": "mods"
+    },
+    {
+      "id": "glitchcore",
+      "ids": [
+        "glitchcore"
+      ],
+      "size": 90717,
+      "file": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "sha256": "d9ea421e7449a35cf3adc41c9f740156342b7b17a08b1be843660608af7b60f9",
+      "source_folder": "mods"
+    },
+    {
+      "id": "jade",
+      "ids": [
+        "jade"
+      ],
+      "size": 725742,
+      "file": "Jade-1.21.1-NeoForge-15.10.5.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Jade-1.21.1-NeoForge-15.10.5.jar",
+      "sha256": "067bb4b007e1d6f6b79f0afe99c91252aa825472b99a76d33a60d24442f9e92d",
+      "source_folder": "mods"
+    },
+    {
+      "id": "mekanism",
+      "ids": [
+        "mekanism"
+      ],
+      "size": 11976009,
+      "file": "Mekanism-1.21.1-10.7.19.85.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mekanism-1.21.1-10.7.19.85.jar",
+      "sha256": "004dbc9f3106f4d192aeaa1ee1190dd16ec9ca8059ed3d093b80034f4c574f43",
+      "source_folder": "mods"
+    },
+    {
+      "id": "mekanismgenerators",
+      "ids": [
+        "mekanismgenerators"
+      ],
+      "size": 1114598,
+      "file": "MekanismGenerators-1.21.1-10.7.19.85.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MekanismGenerators-1.21.1-10.7.19.85.jar",
+      "sha256": "0e5783b111e756f27b48c62b2f0e02fff750c77f7985ff809bfadc5f444ba4ac",
+      "source_folder": "mods"
+    },
+    {
+      "id": "northstar",
+      "ids": [
+        "northstar"
+      ],
+      "size": 14294746,
+      "file": "Northstar-0.5.4+1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Northstar-0.5.4%2B1.21.1.jar",
+      "sha256": "60df8f09df05152d3f686397e78d079667de710e4a0572677cb5147d06c5d09b",
+      "source_folder": "mods"
+    },
+    {
+      "id": "terrablender",
+      "ids": [
+        "terrablender"
+      ],
+      "size": 120364,
+      "file": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "sha256": "edb34c388fe17ea88d0a7fd11174bbf8ae8f28a4c8ce886f1bf9a5cf0ebc36b8",
+      "source_folder": "mods"
+    },
+    {
+      "id": "wallclimbing",
+      "ids": [
+        "wallclimbing"
+      ],
+      "size": 52247,
+      "file": "WallClimbing-v4.1_MOD.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/WallClimbing-v4.1_MOD.jar",
+      "sha256": "b05f5cac39cc222a2e811bea0f51cdaa9bc141a04384a2841fbad46d589ef8d2",
+      "source_folder": "mods"
+    },
+    {
+      "id": "yungsapi",
+      "ids": [
+        "yungsapi"
+      ],
+      "size": 388678,
+      "file": "YungsApi-1.21.1-NeoForge-5.1.6.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
+      "sha256": "08e1d21690d3213a4c62de6b6cf79f3527afb2e72e0cad0e1848d46eb8f682ca",
+      "source_folder": "mods"
+    },
+    {
+      "file": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+      "source_folder": "mods",
+      "size": 782160,
+      "sha256": "61816c3b7c9d92c6b44f93dce87ceb0a22827f20285d5d9c4d10d519d734de04",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
+    },
+    {
+      "file": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "source_folder": "mods",
+      "size": 493967,
+      "sha256": "5625930dfb3240820d6e4ecf55fff0c39f70ce782fad117a4d418251184c7be0",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
+    },
+    {
       "id": "alexsmobs",
       "ids": [
         "alexsmobs"
@@ -39,6 +196,13 @@
       "source_folder": "mods"
     },
     {
+      "file": "artifacts-neoforge-13.2.5.jar",
+      "source_folder": "mods",
+      "size": 1086922,
+      "sha256": "e36a929420a0a616abdb28f5bbbdb866a426aa3bb78d1b39bc1183927c101ce6",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/artifacts-neoforge-13.2.5.jar"
+    },
+    {
       "id": "athena",
       "ids": [
         "athena"
@@ -69,17 +233,6 @@
       "file": "bettercombat-neoforge-2.3.2+1.21.1.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/bettercombat-neoforge-2.3.2%2B1.21.1.jar",
       "sha256": "afb1f28271ee3b622947f533aa754bb22ed67edd4940a3e9fdf2cca1edb7b8a9",
-      "source_folder": "mods"
-    },
-    {
-      "id": "biomesoplenty",
-      "ids": [
-        "biomesoplenty"
-      ],
-      "size": 22338081,
-      "file": "BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.13.jar",
-      "sha256": "6af75f8f41fb50a80945237930516542f5d9b5005334afdc41b393f58f18932a",
       "source_folder": "mods"
     },
     {
@@ -281,6 +434,13 @@
       "source_folder": "mods"
     },
     {
+      "file": "create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar",
+      "source_folder": "mods",
+      "size": 523501,
+      "sha256": "d192d0e665df0af3a06f65ffe0abad49beed802fdafebfcd8f4e9cf3b6b5c139",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar"
+    },
+    {
       "id": "create_ultimate_factory",
       "ids": [
         "create_ultimate_factory"
@@ -336,15 +496,11 @@
       "source_folder": "mods"
     },
     {
-      "id": "create_dragons_plus",
-      "ids": [
-        "create_dragons_plus"
-      ],
-      "size": 1006723,
-      "file": "CreateDragonsPlus-1.11.2b.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CreateDragonsPlus-1.11.2b.jar",
-      "sha256": "9b15e464465a639de9ef5a935ae9fd94ea545904517d1428bc784a4012e0a1e2",
-      "source_folder": "mods"
+      "file": "createoreexcavation-1.21-1.6.8.jar",
+      "source_folder": "mods",
+      "size": 476990,
+      "sha256": "d3a2e1a6e65de7e50ae9e279de399b6535da407abc8e6b4688a56f2e461aab99",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createoreexcavation-1.21-1.6.8.jar"
     },
     {
       "id": "createpropulsion",
@@ -402,28 +558,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "dndecor",
-      "ids": [
-        "dndecor"
-      ],
-      "size": 6329899,
-      "file": "Design-n-Decor-1.21.1-2.2b.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Design-n-Decor-1.21.1-2.2b.jar",
-      "sha256": "af0264e8ba44b77744d9a6173b79fcc39758c5b975fbb377d4000e85bfcd2c8f",
-      "source_folder": "mods"
-    },
-    {
-      "id": "distanthorizons",
-      "ids": [
-        "distanthorizons"
-      ],
-      "size": 30113661,
-      "file": "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
-      "sha256": "daba497eaaefe535f04f2ee6f6be11485d3d5b46676fbf0a792d26e178ef4785",
-      "source_folder": "mods"
-    },
-    {
       "id": "dragonlib",
       "ids": [
         "dragonlib"
@@ -432,28 +566,6 @@
       "file": "dragonlib-neoforge-1.21.1-beta-3.0.28.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/dragonlib-neoforge-1.21.1-beta-3.0.28.jar",
       "sha256": "ba127947220504d1410716e422ef6a9a387d818a922ad5fdb3be044f9f7556f7",
-      "source_folder": "mods"
-    },
-    {
-      "id": "entity_model_features",
-      "ids": [
-        "entity_model_features"
-      ],
-      "size": 567827,
-      "file": "entity_model_features-3.2.4-1.21-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/entity_model_features-3.2.4-1.21-neoforge.jar",
-      "sha256": "84c22f2be06ee6bfab265a443e075225878bba9f408843030dc6de3152e9dedb",
-      "source_folder": "mods"
-    },
-    {
-      "id": "entity_texture_features",
-      "ids": [
-        "entity_texture_features"
-      ],
-      "size": 752334,
-      "file": "entity_texture_features_1.21-neoforge-7.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/entity_texture_features_1.21-neoforge-7.1.jar",
-      "sha256": "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b",
       "source_folder": "mods"
     },
     {
@@ -468,17 +580,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "farmersdelight",
-      "ids": [
-        "farmersdelight"
-      ],
-      "size": 3163042,
-      "file": "FarmersDelight-1.21.1-1.3.2.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/FarmersDelight-1.21.1-1.3.2.jar",
-      "sha256": "8ff438d62e1fce61542945faae45975d823e04bd6e73a07a121ea05ce2f03de7",
-      "source_folder": "mods"
-    },
-    {
       "id": "ferritecore",
       "ids": [
         "ferritecore"
@@ -487,50 +588,6 @@
       "file": "ferritecore-7.0.3-neoforge.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ferritecore-7.0.3-neoforge.jar",
       "sha256": "d87ea28262715ebff45b8a82d493e6b468e7a4521bc021df5d88302196d030a8",
-      "source_folder": "mods"
-    },
-    {
-      "id": "fokusapi",
-      "ids": [
-        "fokusapi"
-      ],
-      "size": 65846,
-      "file": "FokusAPI-v4.5_MOD.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/FokusAPI-v4.5_MOD.jar",
-      "sha256": "9bf3b32674797a7e61c42ffefd9ed2c1526ef16329fa6dd11c97a3d357a85723",
-      "source_folder": "mods"
-    },
-    {
-      "id": "fps_overlay",
-      "ids": [
-        "fps_overlay"
-      ],
-      "size": 91746,
-      "file": "FpsOverlay-neoforge-1.21.1-5.2.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/FpsOverlay-neoforge-1.21.1-5.2.jar",
-      "sha256": "4101c53632782f2ddc1eb0e227e2ee4442665615032e0728810045e3e0c91eb3",
-      "source_folder": "mods"
-    },
-    {
-      "id": "ftbessentials",
-      "ids": [
-        "ftbessentials"
-      ],
-      "size": 209459,
-      "file": "ftb-essentials-neoforge-2101.1.9.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-essentials-neoforge-2101.1.9.jar",
-      "sha256": "4da8e4d461ceef1a5e6f6705265fe24239b132cdc408eb77787231cb56c219bf",
-      "source_folder": "mods"
-    },
-    {
-      "id": "ftblibrary",
-      "ids": [
-        "ftblibrary"
-      ],
-      "size": 1416263,
-      "file": "ftb-library-neoforge-2101.1.32.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.32.jar",
-      "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
       "source_folder": "mods"
     },
     {
@@ -553,28 +610,6 @@
       "file": "geckolib-neoforge-1.21.1-4.8.4.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/geckolib-neoforge-1.21.1-4.8.4.jar",
       "sha256": "a1b6ce25e8627aa7e748672eedb6b71af68e0993462313649c259f38e42bcac9",
-      "source_folder": "mods"
-    },
-    {
-      "id": "glitchcore",
-      "ids": [
-        "glitchcore"
-      ],
-      "size": 90717,
-      "file": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
-      "sha256": "d9ea421e7449a35cf3adc41c9f740156342b7b17a08b1be843660608af7b60f9",
-      "source_folder": "mods"
-    },
-    {
-      "id": "holdmyitems",
-      "ids": [
-        "holdmyitems"
-      ],
-      "size": 35771,
-      "file": "holdmyitems-1.21.1-NeoForge-1.0.4.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/holdmyitems-1.21.1-NeoForge-1.0.4.jar",
-      "sha256": "06730c32c42e00d527b4b8db246f94da3ae4e2cfa949a78d3c3d461941ea73fc",
       "source_folder": "mods"
     },
     {
@@ -611,50 +646,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "irisflw",
-      "ids": [
-        "irisflw"
-      ],
-      "size": 907133,
-      "file": "iris-flywheel-compat-NeoForge-2.4.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/iris-flywheel-compat-NeoForge-2.4.0.jar",
-      "sha256": "f5351cf9a838ae1624fcda78a8734b52cfde20de824db30e3f00dd00b9128ec8",
-      "source_folder": "mods"
-    },
-    {
-      "id": "iris",
-      "ids": [
-        "iris"
-      ],
-      "size": 2540723,
-      "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
-      "sha256": "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314",
-      "source_folder": "mods"
-    },
-    {
-      "id": "jade",
-      "ids": [
-        "jade"
-      ],
-      "size": 725742,
-      "file": "Jade-1.21.1-NeoForge-15.10.5.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Jade-1.21.1-NeoForge-15.10.5.jar",
-      "sha256": "067bb4b007e1d6f6b79f0afe99c91252aa825472b99a76d33a60d24442f9e92d",
-      "source_folder": "mods"
-    },
-    {
-      "id": "jei",
-      "ids": [
-        "jei"
-      ],
-      "size": 1616910,
-      "file": "jei-1.21.1-neoforge-19.32.0.359.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/jei-1.21.1-neoforge-19.32.0.359.jar",
-      "sha256": "0169e38d4771b1a0a6bd9fc92734297105fff2f6ad8a4ed73ad38139b824ea54",
-      "source_folder": "mods"
-    },
-    {
       "id": "kotlinforforge",
       "ids": [
         "kotlinforforge"
@@ -664,6 +655,13 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/kotlinforforge-5.11.0-all.jar",
       "sha256": "89d2ccd9d2ca2996ca3ee57b27165893f4bc4b8431be89461f8b2f8fe6162ac1",
       "source_folder": "mods"
+    },
+    {
+      "file": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "source_folder": "mods",
+      "size": 774220,
+      "sha256": "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/lithium-neoforge-0.15.4%2Bmc1.21.1.jar"
     },
     {
       "id": "ls_core",
@@ -688,26 +686,11 @@
       "source_folder": "mods"
     },
     {
-      "id": "mekanism",
-      "ids": [
-        "mekanism"
-      ],
-      "size": 11976009,
-      "file": "Mekanism-1.21.1-10.7.19.85.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mekanism-1.21.1-10.7.19.85.jar",
-      "sha256": "004dbc9f3106f4d192aeaa1ee1190dd16ec9ca8059ed3d093b80034f4c574f43",
-      "source_folder": "mods"
-    },
-    {
-      "id": "mekanismgenerators",
-      "ids": [
-        "mekanismgenerators"
-      ],
-      "size": 1114598,
-      "file": "MekanismGenerators-1.21.1-10.7.19.85.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MekanismGenerators-1.21.1-10.7.19.85.jar",
-      "sha256": "0e5783b111e756f27b48c62b2f0e02fff750c77f7985ff809bfadc5f444ba4ac",
-      "source_folder": "mods"
+      "file": "mechanicals-1.21.1-1.1.6.jar",
+      "source_folder": "mods",
+      "size": 2022181,
+      "sha256": "0ce9bb97a68a2fc7340695eacd5b9898f2dc481dc6384df62bfb10c92c9de549",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/mechanicals-1.21.1-1.1.6.jar"
     },
     {
       "id": "modernfix",
@@ -721,39 +704,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "mousetweaks",
-      "ids": [
-        "mousetweaks"
-      ],
-      "size": 73938,
-      "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
-      "sha256": "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b",
-      "source_folder": "mods"
-    },
-    {
-      "id": "northstar",
-      "ids": [
-        "northstar"
-      ],
-      "size": 14294746,
-      "file": "Northstar-0.5.4+1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Northstar-0.5.4%2B1.21.1.jar",
-      "sha256": "60df8f09df05152d3f686397e78d079667de710e4a0572677cb5147d06c5d09b",
-      "source_folder": "mods"
-    },
-    {
-      "id": "notenoughanimations",
-      "ids": [
-        "notenoughanimations"
-      ],
-      "size": 1938281,
-      "file": "notenoughanimations-neoforge-1.12.3-mc1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/notenoughanimations-neoforge-1.12.3-mc1.21.1.jar",
-      "sha256": "ac48316842b478777cead0a39e7c8a51810ffa1d848d8ad8f3f56d03eedc5549",
-      "source_folder": "mods"
-    },
-    {
       "id": "ntgl",
       "ids": [
         "ntgl"
@@ -762,17 +712,6 @@
       "file": "ntgl-1.21.1-3.1.5.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ntgl-1.21.1-3.1.5.jar",
       "sha256": "e22ed92392bef1b61c32392a65dc38dfed34290436f33c3c1341004f93f5bb29",
-      "source_folder": "mods"
-    },
-    {
-      "id": "ok_zoomer",
-      "ids": [
-        "ok_zoomer"
-      ],
-      "size": 208085,
-      "file": "ok_zoomer-neo-10.0.0-beta.13.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ok_zoomer-neo-10.0.0-beta.13.jar",
-      "sha256": "61da322358127329d40b36a028faa7d91c370a3708e08becf1f1b8b242c5eb61",
       "source_folder": "mods"
     },
     {
@@ -817,28 +756,6 @@
       "file": "rechiseled_chipped-2.0-1.21.1.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/rechiseled_chipped-2.0-1.21.1.jar",
       "sha256": "07d5f74f0734aa171b1001e6570f53fa0469d8b81e9bfb4032e5697ba008f869",
-      "source_folder": "mods"
-    },
-    {
-      "id": "reeses_sodium_options",
-      "ids": [
-        "reeses_sodium_options"
-      ],
-      "size": 260876,
-      "file": "reeses-sodium-options-neoforge-2.2.3+mc1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/reeses-sodium-options-neoforge-2.2.3%2Bmc1.21.1.jar",
-      "sha256": "25812f308a87c04686de6ac9f24a8073101f81864f0eb9abf348f95d73a6629e",
-      "source_folder": "mods"
-    },
-    {
-      "id": "refinedstorage_jei_integration",
-      "ids": [
-        "refinedstorage_jei_integration"
-      ],
-      "size": 58343,
-      "file": "refinedstorage-jei-integration-neoforge-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/refinedstorage-jei-integration-neoforge-1.0.0.jar",
-      "sha256": "e1721529412de7be9087702c46acbe1c4d1d594418df73a2bbebe3780396fb79",
       "source_folder": "mods"
     },
     {
@@ -919,28 +836,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "sodium",
-      "ids": [
-        "sodium"
-      ],
-      "size": 1291418,
-      "file": "sodium-neoforge-0.8.12+mc1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/sodium-neoforge-0.8.12%2Bmc1.21.1.jar",
-      "sha256": "2f9e69ec9521e657100ef83b3bdf3f18dba6078d57f9853722d7643a577b2266",
-      "source_folder": "mods"
-    },
-    {
-      "id": "sodiumdynamiclights",
-      "ids": [
-        "sodiumdynamiclights"
-      ],
-      "size": 299353,
-      "file": "sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
-      "sha256": "d78002d50865db928fbf2c17c716ffcbbd6d33bff88aa1f0f3a04152a2665e25",
-      "source_folder": "mods"
-    },
-    {
       "id": "sophisticatedbackpacks",
       "ids": [
         "sophisticatedbackpacks"
@@ -985,17 +880,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "spark",
-      "ids": [
-        "spark"
-      ],
-      "size": 3642581,
-      "file": "spark-1.10.124-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/spark-1.10.124-neoforge.jar",
-      "sha256": "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db",
-      "source_folder": "mods"
-    },
-    {
       "id": "supermartijn642configlib",
       "ids": [
         "supermartijn642configlib"
@@ -1026,17 +910,6 @@
       "file": "t_and_t-neoforge-fabric-1.13.9+1.21.1.jar",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/t_and_t-neoforge-fabric-1.13.9%2B1.21.1.jar",
       "sha256": "04e3a5f6e9aa83b2f305e836ed6bceb656c7a6cae8d945415fd8d55bc2450696",
-      "source_folder": "mods"
-    },
-    {
-      "id": "terrablender",
-      "ids": [
-        "terrablender"
-      ],
-      "size": 120364,
-      "file": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
-      "sha256": "edb34c388fe17ea88d0a7fd11174bbf8ae8f28a4c8ce886f1bf9a5cf0ebc36b8",
       "source_folder": "mods"
     },
     {
@@ -1074,15 +947,183 @@
       "source_folder": "mods"
     },
     {
-      "id": "wallclimbing",
+      "id": "distanthorizons",
       "ids": [
-        "wallclimbing"
+        "distanthorizons"
       ],
-      "size": 52247,
-      "file": "WallClimbing-v4.1_MOD.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/WallClimbing-v4.1_MOD.jar",
-      "sha256": "b05f5cac39cc222a2e811bea0f51cdaa9bc141a04384a2841fbad46d589ef8d2",
-      "source_folder": "mods"
+      "size": 30113661,
+      "file": "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
+      "sha256": "daba497eaaefe535f04f2ee6f6be11485d3d5b46676fbf0a792d26e178ef4785",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "fps_overlay",
+      "ids": [
+        "fps_overlay"
+      ],
+      "size": 91746,
+      "file": "FpsOverlay-neoforge-1.21.1-5.2.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/FpsOverlay-neoforge-1.21.1-5.2.jar",
+      "sha256": "4101c53632782f2ddc1eb0e227e2ee4442665615032e0728810045e3e0c91eb3",
+      "source_folder": "modsCliente"
+    },
+    {
+      "file": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "source_folder": "modsCliente",
+      "size": 365195,
+      "sha256": "15bf9bd6d8e3ae8ad35c5a4d90680424b534d9762d698c0a466965afcab5dd78",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/ImmediatelyFast-NeoForge-1.6.14%2B1.21.1.jar"
+    },
+    {
+      "id": "mousetweaks",
+      "ids": [
+        "mousetweaks"
+      ],
+      "size": 73938,
+      "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "sha256": "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "entity_model_features",
+      "ids": [
+        "entity_model_features"
+      ],
+      "size": 567827,
+      "file": "entity_model_features-3.2.4-1.21-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/entity_model_features-3.2.4-1.21-neoforge.jar",
+      "sha256": "84c22f2be06ee6bfab265a443e075225878bba9f408843030dc6de3152e9dedb",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "entity_texture_features",
+      "ids": [
+        "entity_texture_features"
+      ],
+      "size": 752334,
+      "file": "entity_texture_features_1.21-neoforge-7.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/entity_texture_features_1.21-neoforge-7.1.jar",
+      "sha256": "b2e396543c678b8378a2d5557a0cd3d24790364bff7e96edaf17921112d6176b",
+      "source_folder": "modsCliente"
+    },
+    {
+      "file": "entityculling-neoforge-1.11.2-mc1.21.1.jar",
+      "source_folder": "modsCliente",
+      "size": 1510018,
+      "sha256": "3983b981da4a0583c7e58184a8631a23e56cc3b81f4cb53491ca600382879b82",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/entityculling-neoforge-1.11.2-mc1.21.1.jar"
+    },
+    {
+      "id": "holdmyitems",
+      "ids": [
+        "holdmyitems"
+      ],
+      "size": 35771,
+      "file": "holdmyitems-1.21.1-NeoForge-1.0.4.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/holdmyitems-1.21.1-NeoForge-1.0.4.jar",
+      "sha256": "06730c32c42e00d527b4b8db246f94da3ae4e2cfa949a78d3c3d461941ea73fc",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "irisflw",
+      "ids": [
+        "irisflw"
+      ],
+      "size": 907133,
+      "file": "iris-flywheel-compat-NeoForge-2.4.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/iris-flywheel-compat-NeoForge-2.4.0.jar",
+      "sha256": "f5351cf9a838ae1624fcda78a8734b52cfde20de824db30e3f00dd00b9128ec8",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "iris",
+      "ids": [
+        "iris"
+      ],
+      "size": 2540723,
+      "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+      "sha256": "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "jei",
+      "ids": [
+        "jei"
+      ],
+      "size": 1616910,
+      "file": "jei-1.21.1-neoforge-19.32.0.359.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/jei-1.21.1-neoforge-19.32.0.359.jar",
+      "sha256": "0169e38d4771b1a0a6bd9fc92734297105fff2f6ad8a4ed73ad38139b824ea54",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "notenoughanimations",
+      "ids": [
+        "notenoughanimations"
+      ],
+      "size": 1938281,
+      "file": "notenoughanimations-neoforge-1.12.3-mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/notenoughanimations-neoforge-1.12.3-mc1.21.1.jar",
+      "sha256": "ac48316842b478777cead0a39e7c8a51810ffa1d848d8ad8f3f56d03eedc5549",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "ok_zoomer",
+      "ids": [
+        "ok_zoomer"
+      ],
+      "size": 208085,
+      "file": "ok_zoomer-neo-10.0.0-beta.13.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/ok_zoomer-neo-10.0.0-beta.13.jar",
+      "sha256": "61da322358127329d40b36a028faa7d91c370a3708e08becf1f1b8b242c5eb61",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "reeses_sodium_options",
+      "ids": [
+        "reeses_sodium_options"
+      ],
+      "size": 260876,
+      "file": "reeses-sodium-options-neoforge-2.2.3+mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/reeses-sodium-options-neoforge-2.2.3%2Bmc1.21.1.jar",
+      "sha256": "25812f308a87c04686de6ac9f24a8073101f81864f0eb9abf348f95d73a6629e",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "refinedstorage_jei_integration",
+      "ids": [
+        "refinedstorage_jei_integration"
+      ],
+      "size": 58343,
+      "file": "refinedstorage-jei-integration-neoforge-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/refinedstorage-jei-integration-neoforge-1.0.0.jar",
+      "sha256": "e1721529412de7be9087702c46acbe1c4d1d594418df73a2bbebe3780396fb79",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "sodium",
+      "ids": [
+        "sodium"
+      ],
+      "size": 1291418,
+      "file": "sodium-neoforge-0.8.12+mc1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/sodium-neoforge-0.8.12%2Bmc1.21.1.jar",
+      "sha256": "2f9e69ec9521e657100ef83b3bdf3f18dba6078d57f9853722d7643a577b2266",
+      "source_folder": "modsCliente"
+    },
+    {
+      "id": "sodiumdynamiclights",
+      "ids": [
+        "sodiumdynamiclights"
+      ],
+      "size": 299353,
+      "file": "sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/sodiumdynamiclights-neoforge-1.0.10-1.21.1.jar",
+      "sha256": "d78002d50865db928fbf2c17c716ffcbbd6d33bff88aa1f0f3a04152a2665e25",
+      "source_folder": "modsCliente"
     },
     {
       "id": "xaerominimap",
@@ -1091,9 +1132,9 @@
       ],
       "size": 2138254,
       "file": "xaerominimap-neoforge-1.21.1-26.1.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/xaerominimap-neoforge-1.21.1-26.1.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/xaerominimap-neoforge-1.21.1-26.1.0.jar",
       "sha256": "6bd6cbab01ff57b9ba2fbfee18f9605593101f15d80e8d19dc59c385d2535ccc",
-      "source_folder": "mods"
+      "source_folder": "modsCliente"
     },
     {
       "id": "xaeroworldmap",
@@ -1102,9 +1143,9 @@
       ],
       "size": 1386888,
       "file": "xaeroworldmap-neoforge-1.21.1-1.41.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/xaeroworldmap-neoforge-1.21.1-1.41.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/xaeroworldmap-neoforge-1.21.1-1.41.0.jar",
       "sha256": "b3e377b11d277cfbc0ccdd91a6fb6bc1ff4e93b354eb9c0277e1e4446c316ccb",
-      "source_folder": "mods"
+      "source_folder": "modsCliente"
     },
     {
       "id": "yet_another_config_lib_v3",
@@ -1113,20 +1154,9 @@
       ],
       "size": 1118651,
       "file": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
       "sha256": "b5c30321b46cfaa521645a04aff89d2804d8167a25bb23ad4b1ae8da73093a2f",
-      "source_folder": "mods"
-    },
-    {
-      "id": "yungsapi",
-      "ids": [
-        "yungsapi"
-      ],
-      "size": 388678,
-      "file": "YungsApi-1.21.1-NeoForge-5.1.6.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsApi-1.21.1-NeoForge-5.1.6.jar",
-      "sha256": "08e1d21690d3213a4c62de6b6cf79f3527afb2e72e0cad0e1848d46eb8f682ca",
-      "source_folder": "mods"
+      "source_folder": "modsCliente"
     }
   ],
   "resourcepacks": [
@@ -1155,6 +1185,5 @@
     }
   ],
   "modsServer": [],
-  "catalog_pending": true,
-  "server_mods": []
+  "catalog_pending": true
 }
