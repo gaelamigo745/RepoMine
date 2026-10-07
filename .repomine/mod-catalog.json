@@ -1446,9 +1446,9 @@
       "size": 1034915,
       "sha256": "685a7e981def23d5fa1d6cb92ef149da7e8b5f628a805fe0f2b47dec1cae9f3a",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MobileNetworks-4.0.0.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MobileNetworks-4.0.0.jar"
+      "enabled": false
     }
   ]
 }
