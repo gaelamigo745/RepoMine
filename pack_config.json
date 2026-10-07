@@ -8,5 +8,7 @@
   "branch": "main",
   "server_name": "Servidor Gael",
   "server_address": "tecserver.playit.plus",
-  "config_policies": {}
+  "config_policies": {
+    "immediatelyfast.json": "default"
+  }
 }

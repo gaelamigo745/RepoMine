@@ -20,9 +20,9 @@ from repomine_core import (
 )
 
 APP_NAME = "RepoMine · Servidor Gael"
-APP_VERSION = "1.1.0"
-MANIFEST_URL = "https://raw.githubusercontent.com/Qmigo745/RepoMine/main/manifest.json"
-LATEST_RELEASE_URL = "https://api.github.com/repos/Qmigo745/RepoMine/releases/latest"
+APP_VERSION = "1.2.0"
+MANIFEST_URL = "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/manifest.json"
+LATEST_RELEASE_URL = "https://api.github.com/repos/gaelamigo745/RepoMine/releases/latest"
 UPDATE_ASSET_NAME = "InstaladorModsMinecraft.exe"
 SETTINGS_PATH = Path(os.getenv("LOCALAPPDATA", str(Path.home()))) / "RepoMine" / "installer_settings.json"
 
@@ -53,7 +53,7 @@ def find_update_asset(release):
 
 def release_url(asset):
     url = str(asset.get("browser_download_url", ""))
-    if not url.startswith("https://github.com/Qmigo745/RepoMine/releases/download/"):
+    if not url.startswith("https://github.com/gaelamigo745/RepoMine/releases/download/"):
         raise ValueError("La actualización no pertenece a este repositorio.")
     return url
 
@@ -263,7 +263,7 @@ class ModInstallerApp:
         self.manifest = validate_manifest(download_json(MANIFEST_URL + "?v=" + str(datetime.now().timestamp())))
         self.events.put(("pack", f"{self.manifest['pack_name']} · Minecraft {self.manifest['minecraft_version']} · "
                          f"{self.manifest['loader']} {self.manifest['loader_version']}"))
-        self.log(f"Catálogo: {len(self.manifest['mods'])} mods, {len(self.manifest.get('resourcepacks', []))} paquetes de recursos.")
+        self.log(f"Catálogo: {len(self.manifest['mods']) + len(self.manifest.get('modsCliente', []))} mods, {len(self.manifest.get('resourcepacks', []))} paquetes de recursos.")
         return self.manifest
 
     def verify_mods(self):

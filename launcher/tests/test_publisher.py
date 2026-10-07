@@ -30,6 +30,27 @@ class PublisherTests(unittest.TestCase):
             jar.writestr("META-INF/neoforge.mods.toml", metadata)
         return path
 
+    def test_three_mod_sections_and_hidden_config_marker(self):
+        self.jar("shared.jar", '[[mods]]\nmodId="shared"')
+        for section in ("modsCliente", "modsServer"):
+            directory = self.root / section
+            directory.mkdir()
+            with zipfile.ZipFile(directory / (section + ".jar"), "w") as jar:
+                jar.writestr("META-INF/neoforge.mods.toml", '[[mods]]\nmodId="' + section.lower() + '"')
+        (self.root / "shared-config/.gitkeep").touch()
+        self.assertTrue(publisher.generate_manifest(log=lambda _: None))
+        data = json.loads((self.root / "manifest.json").read_text())
+        for section in ("mods", "modsCliente", "modsServer"):
+            self.assertEqual(len(data[section]), 1)
+            self.assertIn("/" + section + "/", data[section][0]["url"])
+        self.assertEqual(data["configs"], [])
+        self.assertTrue(publisher.verify_manifest_assets(log=lambda _: None))
+        with patch.object(publisher, "run_git") as git:
+            git.return_value.stdout = ""
+            paths = publisher.publication_asset_paths()
+        self.assertIn(":(glob)modsCliente/*.jar", paths)
+        self.assertIn(":(glob)modsServer/*.jar", paths)
+
     def test_dependency_is_not_mod_and_inline_declaration(self):
         jar = self.jar("WallClimbing-v4.jar", 'mods = [{modId="wallclimbing"}]\n[[dependencies.wallclimbing]]\nmodId="fokusapi"')
         self.assertEqual(publisher.mod_id_from_jar(jar), "wallclimbing")

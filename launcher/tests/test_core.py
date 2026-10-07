@@ -47,6 +47,49 @@ class CoreTests(unittest.TestCase):
         with patch.object(core.urllib.request, "urlopen", side_effect=lambda *a, **k: Response(b"new")):
             return core.synchronize(self.root, data, log=lambda _: None)
 
+    def test_pending_catalog_never_downloads_or_creates_installation(self):
+        data = manifest()
+        data["catalog_pending"] = True
+        with patch.object(core.urllib.request, "urlopen") as fetch:
+            with self.assertRaisesRegex(ValueError, "pendiente de regeneración"):
+                core.synchronize(self.root, data, log=lambda _: None)
+        fetch.assert_not_called()
+        self.assertEqual(list(self.root.iterdir()), [])
+
+    def test_client_and_server_install_only_their_sections(self):
+        data = manifest(entry("shared.jar"))
+        data["modsCliente"] = [entry("client.jar")]
+        data["modsServer"] = [entry("server.jar")]
+        self.assertEqual({name for name, _ in core.entries(data)},
+                         {"mods/shared.jar", "mods/client.jar"})
+        self.assertEqual({name for name, _ in core.entries(data, "server")},
+                         {"mods/shared.jar", "mods/server.jar"})
+        with patch.object(core.urllib.request, "urlopen", side_effect=lambda *a, **k: Response(b"new")) as fetch:
+            core.synchronize(self.root, data, log=lambda _: None)
+        self.assertEqual(fetch.call_count, 2)
+        self.assertTrue((self.root / "mods/client.jar").is_file())
+        self.assertFalse((self.root / "mods/server.jar").exists())
+        self.assertFalse((self.root / "modsCliente").exists())
+
+    def test_duplicate_deployment_paths_are_rejected(self):
+        data = manifest(entry("same.jar"))
+        data["modsCliente"] = [entry("SAME.jar")]
+        with self.assertRaises(ValueError):
+            core.validate_manifest(data)
+        data["modsCliente"] = [entry("bad.zip")]
+        with self.assertRaises(ValueError):
+            core.validate_manifest(data)
+
+    def test_client_preserves_user_config_and_retires_old_server_mod(self):
+        self.put("mods/server.jar", b"old")
+        self.put("config/options.toml", b"personal")
+        self.state({"mods/server.jar": b"old"})
+        data = manifest(entry("main.jar"), configs=[entry("options.toml", policy="default")])
+        data["modsServer"] = [entry("server.jar")]
+        self.synchronize(data)
+        self.assertFalse((self.root / "mods/server.jar").exists())
+        self.assertEqual((self.root / "config/options.toml").read_bytes(), b"personal")
+
     def test_validation_rejects_traversal_windows_aliases_and_case_duplicates(self):
         for name in ("../escape.jar", "sub/a.jar", "C:bad.jar", "CON.jar", "bad.jar.", "a\\b.jar"):
             with self.subTest(name=name), self.assertRaises(ValueError):

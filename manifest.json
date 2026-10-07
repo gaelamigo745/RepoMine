@@ -4,18 +4,7 @@
   "minecraft_version": "1.21.1",
   "loader": "NeoForge",
   "loader_version": "21.1.233",
-  "mods": [
-    {
-      "id": "xaerominimap",
-      "ids": [
-        "xaerominimap"
-      ],
-      "size": 2138254,
-      "file": "xaerominimap-neoforge-1.21.1-26.1.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/xaerominimap-neoforge-1.21.1-26.1.0.jar",
-      "sha256": "6bd6cbab01ff57b9ba2fbfee18f9605593101f15d80e8d19dc59c385d2535ccc"
-    }
-  ],
+  "mods": [],
   "resourcepacks": [
     {
       "size": 850941,
@@ -28,5 +17,19 @@
   "server": {
     "name": "Servidor Gael",
     "address": "tecserver.playit.plus"
-  }
+  },
+  "modsCliente": [
+    {
+      "id": "xaerominimap",
+      "ids": [
+        "xaerominimap"
+      ],
+      "size": 2138254,
+      "file": "xaerominimap-neoforge-1.21.1-26.1.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/xaerominimap-neoforge-1.21.1-26.1.0.jar",
+      "sha256": "6bd6cbab01ff57b9ba2fbfee18f9605593101f15d80e8d19dc59c385d2535ccc"
+    }
+  ],
+  "modsServer": [],
+  "catalog_pending": true
 }

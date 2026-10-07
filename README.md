@@ -121,3 +121,24 @@ $env:PYTHONPATH = "$PWD\launcher;$PWD"
 Antes de distribuir una versión, prueba el EXE en Windows con una carpeta de prueba y comprueba una instalación inicial, una actualización y el arranque con una cuenta válida. Las pruebas automatizadas no sustituyen una partida real ni verifican que todos los mods sean compatibles entre sí.
 
 Los mods siguen descargándose desde GitHub; cada actualización de JAR aumenta el historial del repositorio. El ZIP personal no se usa como descarga del pack. Si el repositorio crece demasiado, puede migrarse la distribución a archivos de Releases o a una plataforma de modpacks sin cambiar el principio de verificación mediante hashes.
+
+## Separación del pack y configuración predeterminada
+
+| Carpeta del repositorio | Destino |
+| --- | --- |
+| `mods/` | Cliente y servidor. |
+| `modsCliente/` | Solo cliente: renderizado, mapas, interfaz y efectos visuales. |
+| `modsServer/` | Solo servidor: FTB Essentials y su biblioteca; coloca aquí el mod de métricas del panel. |
+| `shared-config/` | Archivos que se instalan bajo `config/`, respetando sus subcarpetas. |
+
+El launcher 1.2.0 instala `mods` + `modsCliente` dentro de la carpeta local `mods/`. Nunca descarga `modsServer`. El núcleo permite seleccionar `target="server"` para instalar `mods` + `modsServer`; el agente/panel del servidor debe integrar esta selección por separado. No copies `modsCliente` al servidor.
+
+`generar_manifest.py` genera las tres listas (`mods`, `modsCliente`, `modsServer`) y las configuraciones. El manifiesto antiguo sin listas adicionales sigue siendo compatible. No se generan entradas para archivos ocultos como `.gitkeep`.
+
+La configuración `shared-config/immediatelyfast.json` utiliza las optimizaciones habituales y desactiva las opciones experimentales. Se publica con política `default`: se instala solamente cuando falta y conserva los ajustes del jugador. Para hacer obligatoria una configuración, agrega su ruta relativa a `config_policies` con valor `managed`; las sustituciones se respaldan.
+
+Se retiró Spark. Los mods descargados en esta actualización y sus procedencias aparecen en `docs/mods-incorporados.md`. No se incorporaron IDAS, Steam n’ Rails ni Crafts & Additions en esta primera etapa.
+
+**Pendiente de regeneración por el administrador:** se conservaron los SHA-256 previos al reorganizar el catálogo, sin calcular los hashes de los nueve JAR nuevos ni de la configuración. Ejecuta `python generar_manifest.py --generate` desde la raíz y publica `manifest.json` antes de distribuir este pack. El catálogo anterior contenía solamente un mod. Se marcó `catalog_pending: true` para impedir una instalación incompleta; generar y publicar el manifiesto completo elimina esa marca y habilita la instalación. Compila y distribuye también el launcher actualizado; no se creó una Release automáticamente.
+
+Distant Horizons, shaders y efectos visuales permanecen en `modsCliente`; no se ha implementado un selector de mods opcionales. Para un perfil ligero conviene excluirlos en una futura variante del catálogo. Las pruebas de Python comprueban la selección y sincronización de archivos; falta probar una partida y los vehículos con Lithium y Entity Culling.

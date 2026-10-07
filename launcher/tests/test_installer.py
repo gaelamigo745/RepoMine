@@ -20,7 +20,7 @@ class InstallerTests(unittest.TestCase):
     def test_update_checksum_fallback_and_duplicate_rejection(self):
         digest = "a" * 64
         release = {"assets": [{"name": "SHA256SUMS.txt", "browser_download_url":
-                   "https://github.com/Qmigo745/RepoMine/releases/download/v1.1.0/SHA256SUMS.txt"}]}
+                   "https://github.com/gaelamigo745/RepoMine/releases/download/v1.1.0/SHA256SUMS.txt"}]}
         line = (digest + "  InstaladorModsMinecraft.exe\r\n").encode()
         with patch.object(ui.urllib.request, "urlopen", return_value=io.BytesIO(line)):
             self.assertEqual(ui.update_digest(release, {}), digest)

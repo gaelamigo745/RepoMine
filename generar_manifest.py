@@ -15,7 +15,7 @@ from launcher.repomine_core import mod_ids_from_jar, validate_manifest, atomic_j
 
 # ================= CONFIGURACIÓN =================
 
-REPO_OWNER = "Qmigo745"
+REPO_OWNER = "gaelamigo745"
 REPO_NAME = "RepoMine"
 BRANCH = "main"
 
@@ -41,6 +41,21 @@ GITHUB_MAX_FILE_SIZE = 100 * 1024 * 1024
 GITHUB_WARNING_FILE_SIZE = 50 * 1024 * 1024
 PACK_CONFIG_PATH = PROJECT_DIR / "pack_config.json"
 SHARED_CONFIG_PATH = PROJECT_DIR / "shared-config"
+
+
+def mod_directories():
+    return {"mods": MODS_PATH, "modsCliente": PROJECT_DIR / "modsCliente",
+            "modsServer": PROJECT_DIR / "modsServer"}
+
+
+def local_mod_files():
+    return sorted((p for directory in mod_directories().values() for p in directory.glob("*.jar")),
+                  key=lambda p: p.name.lower())
+
+
+def manifest_mod_names(manifest):
+    return {entry["file"] for section in mod_directories()
+            for entry in manifest.get(section, [])}
 
 
 def load_pack_config(config=None):
@@ -232,7 +247,8 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
         log(f"No existe la carpeta: {MODS_PATH}")
         return False
 
-    jar_files = sorted(MODS_PATH.glob("*.jar"), key=lambda path: path.name.lower())
+    jar_files = [(section, jar) for section, directory in mod_directories().items()
+                 for jar in sorted(directory.glob("*.jar"), key=lambda p: p.name.lower())]
     if not jar_files:
         log("No se encontraron archivos .jar dentro de mods/.")
         return False
@@ -242,10 +258,10 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
     branch = config.get("branch", BRANCH)
     log(f"Analizando {len(jar_files)} mods...")
 
-    mods = []
+    mod_groups = {section: [] for section in mod_directories()}
     declared_ids = {}
     total = len(jar_files)
-    for index, jar in enumerate(jar_files, start=1):
+    for index, (section, jar) in enumerate(jar_files, start=1):
         if jar.is_symlink():
             log(f"Error: no se permiten enlaces simbólicos: {jar.name}")
             return False
@@ -282,12 +298,12 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
         if before.st_size != after.st_size or before.st_mtime_ns != after.st_mtime_ns:
             log(f"Error: {jar.name} cambió mientras se generaba el manifiesto.")
             return False
-        mods.append({
+        mod_groups[section].append({
             "id": mod_id,
             "ids": ids or [mod_id],
             "size": before.st_size,
             "file": jar.name,
-            "url": raw_github_url(REPO_MODS_FOLDER, jar.name, owner, repo, branch),
+            "url": raw_github_url(section, jar.name, owner, repo, branch),
             "sha256": file_hash,
         })
         log(f"✓ [{index}/{total}] {jar.name}")
@@ -330,7 +346,7 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
         for path in sorted(SHARED_CONFIG_PATH.rglob("*")):
             if path.is_symlink() or not path.resolve().is_relative_to(SHARED_CONFIG_PATH.resolve()):
                 raise ValueError(f"No se permiten enlaces en configuraciones: {path}")
-            if not path.is_file():
+            if not path.is_file() or any(part.startswith(".") for part in path.relative_to(SHARED_CONFIG_PATH).parts):
                 continue
             name = safe_relative(path.relative_to(SHARED_CONFIG_PATH).as_posix(), nested=True)
             before = path.stat()
@@ -352,7 +368,7 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
         "minecraft_version": config.get("minecraft_version", MINECRAFT_VERSION),
         "loader": config.get("loader", LOADER),
         "loader_version": config.get("loader_version", LOADER_VERSION),
-        "mods": mods,
+        **mod_groups,
         "resourcepacks": resourcepacks,
         "configs": configs,
         "server": {"name": config.get("server_name", PACK_NAME),
@@ -498,11 +514,11 @@ def verify_manifest_assets(log=print):
     """Evita publicar un manifiesto generado antes del último cambio local."""
     try:
         manifest = validate_manifest(json.loads(MANIFEST_PATH.read_text(encoding="utf-8")))
-        for section, directory, pattern in (("mods", MODS_PATH, "*.jar"),
+        for section, directory, pattern in (*((name, directory, "*.jar") for name, directory in mod_directories().items()),
                 ("resourcepacks", RESOURCEPACKS_PATH, "*.zip"),
                 ("configs", SHARED_CONFIG_PATH, "**/*")):
             expected = {entry["file"] for entry in manifest.get(section, [])}
-            actual = {p.relative_to(directory).as_posix() for p in directory.glob(pattern) if p.is_file()}
+            actual = {p.relative_to(directory).as_posix() for p in directory.glob(pattern) if p.is_file() and not any(part.startswith(".") for part in p.relative_to(directory).parts)}
             if expected != actual:
                 raise ValueError(f"Cambió el contenido de {directory.name}; genera de nuevo el manifiesto.")
             for entry in manifest.get(section, []):
@@ -518,7 +534,7 @@ def verify_manifest_assets(log=print):
 def publication_asset_paths():
     """Selección explícita: nunca incluye el ZIP de transporte ni archivos .disable."""
     paths = []
-    for folder, pattern in ((REPO_MODS_FOLDER, "*.jar"), (REPO_RESOURCEPACKS_FOLDER, "*.zip")):
+    for folder, pattern in (*((folder, "*.jar") for folder in mod_directories()), (REPO_RESOURCEPACKS_FOLDER, "*.zip")):
         selector = f":(glob){folder}/{pattern}"
         if list((PROJECT_DIR / folder).glob(pattern)) or run_git("ls-files", "--", selector).stdout.strip():
             paths.append(selector)
@@ -1191,8 +1207,8 @@ class ManifestManagerApp:
 
     def action_upload_mods(self):
         message = self.confirm_publish(
-            "Subir archivos", [REPO_MODS_FOLDER, REPO_RESOURCEPACKS_FOLDER],
-            "Se publicarán los cambios de mods/ y Resourcepacks/."
+            "Subir archivos", [*mod_directories(), REPO_RESOURCEPACKS_FOLDER],
+            "Se publicarán los cambios de mods/, modsCliente/, modsServer/, shared-config/ y Resourcepacks/."
         )
         if message is None:
             return
@@ -1228,13 +1244,13 @@ class ManifestManagerApp:
                 "\n\nTambién se enviarán estos commits locales pendientes:\n"
                 + "\n".join(preflight["outgoing"][:8])
             )
-        changes = git_changes([OUTPUT_FILE, REPO_MODS_FOLDER])
+        changes = git_changes([OUTPUT_FILE, *mod_directories()])
         preview = "\n".join(changes[:12]) or "No se detectaron cambios actualmente."
         if len(changes) > 12:
             preview += f"\n... y {len(changes) - 12} archivo(s) más"
         accepted = messagebox.askyesno(
             "Generar y publicar todo",
-            "Se recalculará el manifiesto completo y después se publicarán manifest.json, mods/ y Resourcepacks/.\n\n"
+            "Se recalculará el manifiesto completo y después se publicarán manifest.json, mods/, modsCliente/, modsServer/, shared-config/ y Resourcepacks/.\n\n"
             f"Rama: {preflight['current_branch']}\nRemoto: {preflight['remote']}"
             f"\n\nCambios actuales:\n{preview}{outgoing}"
             f"\n\nMensaje del commit:\n{message}\n\n¿Deseas continuar?",
@@ -1251,12 +1267,12 @@ class ManifestManagerApp:
         )
 
     def refresh_all(self):
-        jars = sorted(MODS_PATH.glob("*.jar"), key=lambda path: path.name.lower()) if MODS_PATH.exists() else []
+        jars = local_mod_files()
         manifest = load_manifest()
-        manifest_names = {mod.get("file") for mod in manifest.get("mods", []) if mod.get("file")}
+        manifest_names = manifest_mod_names(manifest)
         local_names = {jar.name for jar in jars}
-        scoped_changes = git_changes([OUTPUT_FILE, REPO_MODS_FOLDER, REPO_RESOURCEPACKS_FOLDER])
-        mods_changes = git_changes([REPO_MODS_FOLDER, REPO_RESOURCEPACKS_FOLDER])
+        scoped_changes = git_changes([OUTPUT_FILE, *mod_directories(), REPO_RESOURCEPACKS_FOLDER])
+        mods_changes = git_changes([*mod_directories(), REPO_RESOURCEPACKS_FOLDER])
         total_size = sum(jar.stat().st_size for jar in jars)
 
         self.stat_labels["mods"].configure(text=str(len(jars)))
@@ -1278,7 +1294,7 @@ class ManifestManagerApp:
             for change in scoped_changes[:30]:
                 self.changes_list.insert("end", change)
         else:
-            self.changes_list.insert("end", "✓ No hay cambios pendientes en manifest.json, mods/ ni Resourcepacks/")
+            self.changes_list.insert("end", "✓ No hay cambios pendientes en manifest.json, mods/, modsCliente/, modsServer/ ni Resourcepacks/")
         self.change_count_label.configure(text=f"{len(scoped_changes)} archivo(s)")
 
         state = branch_status()
@@ -1296,12 +1312,12 @@ class ManifestManagerApp:
         if not hasattr(self, "mods_tree"):
             return
         if jars is None:
-            jars = sorted(MODS_PATH.glob("*.jar"), key=lambda path: path.name.lower()) if MODS_PATH.exists() else []
+            jars = local_mod_files()
         if manifest_names is None:
             manifest = load_manifest()
-            manifest_names = {mod.get("file") for mod in manifest.get("mods", []) if mod.get("file")}
+            manifest_names = manifest_mod_names(manifest)
         if mods_changes is None:
-            mods_changes = git_changes([REPO_MODS_FOLDER])
+            mods_changes = git_changes(list(mod_directories()))
 
         changed_names = set()
         for line in mods_changes:

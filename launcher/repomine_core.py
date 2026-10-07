@@ -19,7 +19,8 @@ from urllib.parse import urlsplit
 import certifi
 
 SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
-SECTIONS = {"mods": "mods", "resourcepacks": "resourcepacks", "configs": "config"}
+MOD_SECTIONS = ("mods", "modsCliente", "modsServer")
+SECTIONS = {**dict.fromkeys(MOD_SECTIONS, "mods"), "resourcepacks": "resourcepacks", "configs": "config"}
 MAX_FILE_SIZE = 1024 * 1024 * 1024
 
 
@@ -84,11 +85,14 @@ def validate_manifest(data):
     if (not isinstance(data, dict) or type(data.get("schema_version", 1)) is not int
             or data.get("schema_version", 1) not in (1, 2)):
         raise ValueError("Formato de manifiesto no compatible.")
+    if data.get("catalog_pending"):
+        raise ValueError("El catálogo está pendiente de regeneración. El administrador debe generar y publicar manifest.json con todos los mods y sus hashes antes de instalar.")
     for key in ("pack_name", "minecraft_version", "loader", "loader_version"):
         if not isinstance(data.get(key), str) or not data[key].strip():
             raise ValueError(f"Falta el campo {key} en el manifiesto.")
     if not isinstance(data.get("mods"), list) or not data["mods"]:
         raise ValueError("El manifiesto no contiene una lista de mods válida.")
+    deployed_names = {"client": set(), "server": set()}
     for section in SECTIONS:
         entries = data.get(section, [])
         if not isinstance(entries, list) or len(entries) > 5000:
@@ -101,8 +105,14 @@ def validate_manifest(data):
             if name.casefold() in seen:
                 raise ValueError(f"Archivo duplicado: {name}")
             seen.add(name.casefold())
-            if section in ("mods", "resourcepacks") and not name.lower().endswith(
-                    ".jar" if section == "mods" else ".zip"):
+            if section in MOD_SECTIONS:
+                targets = ("client", "server") if section == "mods" else (("client",) if section == "modsCliente" else ("server",))
+                for target in targets:
+                    if name.casefold() in deployed_names[target]:
+                        raise ValueError(f"Archivo duplicado para {target}: {name}")
+                    deployed_names[target].add(name.casefold())
+            if section in (*MOD_SECTIONS, "resourcepacks") and not name.lower().endswith(
+                    ".jar" if section in MOD_SECTIONS else ".zip"):
                 raise ValueError(f"Extensión incorrecta: {name}")
             if not re.fullmatch(r"[a-fA-F0-9]{64}", str(entry.get("sha256", ""))):
                 raise ValueError(f"SHA-256 ausente o inválido: {name}")
@@ -178,16 +188,21 @@ def download_verified(url, destination, expected_hash, progress=None, expected_s
             Path(temporary).unlink(missing_ok=True)
 
 
-def entries(manifest):
+def entries(manifest, target="client"):
+    if target not in ("client", "server"):
+        raise ValueError("El destino debe ser client o server.")
+    excluded = "modsServer" if target == "client" else "modsCliente"
     for section, folder in SECTIONS.items():
+        if section == excluded or (target == "server" and section == "resourcepacks"):
+            continue
         for entry in manifest.get(section, []):
             yield f"{folder}/{entry['file']}", entry
 
 
-def inspect_pack(root, manifest):
+def inspect_pack(root, manifest, *, target="client"):
     validate_manifest(manifest)
     missing, changed, preserved = [], [], []
-    for relative, entry in entries(manifest):
+    for relative, entry in entries(manifest, target):
         path = confined_path(root, relative)
         if not path.is_file():
             missing.append(relative)
@@ -195,7 +210,7 @@ def inspect_pack(root, manifest):
             preserved.append(relative)
         elif sha256_file(path) != entry["sha256"].lower():
             changed.append(relative)
-    known = {r.casefold() for r, _ in entries(manifest)}
+    known = {r.casefold() for r, _ in entries(manifest, target)}
     extras = ["mods/" + p.name for p in (Path(root) / "mods").glob("*.jar")
               if ("mods/" + p.name).casefold() not in known]
     return {"missing": missing, "changed": changed, "preserved": preserved, "extras": extras}
@@ -228,7 +243,7 @@ class PackLock:
         self.stream.close()
 
 
-def synchronize(root, manifest, log=print, progress=None, *, lock=True):
+def synchronize(root, manifest, log=print, progress=None, *, lock=True, target="client"):
     validate_manifest(manifest)
     root = Path(root).resolve()
     with PackLock(root) if lock else nullcontext():
@@ -245,8 +260,8 @@ def synchronize(root, manifest, log=print, progress=None, *, lock=True):
                     raise ValueError("Registro de archivos administrados no válido.")
         else:
             old = {}
-        report = inspect_pack(root, manifest)
-        desired = dict(entries(manifest))
+        report = inspect_pack(root, manifest, target=target)
+        desired = dict(entries(manifest, target))
         pending = report["missing"] + report["changed"]
         work_dir = confined_path(root, ".repomine/staging")
         work_dir.mkdir(parents=True, exist_ok=True)
