@@ -1157,6 +1157,17 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
       "sha256": "b5c30321b46cfaa521645a04aff89d2804d8167a25bb23ad4b1ae8da73093a2f",
       "source_folder": "modsCliente"
+    },
+    {
+      "id": "ftblibrary",
+      "ids": [
+        "ftblibrary"
+      ],
+      "size": 1416263,
+      "file": "ftb-library-neoforge-2101.1.32.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.32.jar",
+      "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
+      "source_folder": "mods"
     }
   ],
   "resourcepacks": [

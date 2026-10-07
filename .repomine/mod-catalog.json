@@ -175,18 +175,18 @@
       "source_folder": "mods",
       "size": 782160,
       "sha256": "61816c3b7c9d92c6b44f93dce87ceb0a22827f20285d5d9c4d10d519d734de04",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
+      "enabled": true
     },
     {
       "file": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
       "source_folder": "mods",
       "size": 493967,
       "sha256": "5625930dfb3240820d6e4ecf55fff0c39f70ce782fad117a4d418251184c7be0",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
+      "enabled": true
     },
     {
       "id": "alexsmobs",
@@ -232,9 +232,9 @@
       "source_folder": "mods",
       "size": 1086922,
       "sha256": "e36a929420a0a616abdb28f5bbbdb866a426aa3bb78d1b39bc1183927c101ce6",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/artifacts-neoforge-13.2.5.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/artifacts-neoforge-13.2.5.jar"
+      "enabled": true
     },
     {
       "id": "athena",
@@ -514,9 +514,9 @@
       "source_folder": "mods",
       "size": 523501,
       "sha256": "d192d0e665df0af3a06f65ffe0abad49beed802fdafebfcd8f4e9cf3b6b5c139",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_mechanical_extruder-1.21.1-2.2.2-6.0.10.jar"
+      "enabled": true
     },
     {
       "id": "create_ultimate_factory",
@@ -588,9 +588,9 @@
       "source_folder": "mods",
       "size": 476990,
       "sha256": "d3a2e1a6e65de7e50ae9e279de399b6535da407abc8e6b4688a56f2e461aab99",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createoreexcavation-1.21-1.6.8.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createoreexcavation-1.21-1.6.8.jar"
+      "enabled": true
     },
     {
       "id": "createpropulsion",
@@ -779,9 +779,9 @@
       "source_folder": "mods",
       "size": 774220,
       "sha256": "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/lithium-neoforge-0.15.4%2Bmc1.21.1.jar"
+      "enabled": true
     },
     {
       "id": "ls_core",
@@ -814,9 +814,9 @@
       "source_folder": "mods",
       "size": 2022181,
       "sha256": "0ce9bb97a68a2fc7340695eacd5b9898f2dc481dc6384df62bfb10c92c9de549",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/mechanicals-1.21.1-1.1.6.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/mechanicals-1.21.1-1.1.6.jar"
+      "enabled": true
     },
     {
       "id": "modernfix",
@@ -1149,9 +1149,9 @@
       "source_folder": "modsCliente",
       "size": 365195,
       "sha256": "15bf9bd6d8e3ae8ad35c5a4d90680424b534d9762d698c0a466965afcab5dd78",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/ImmediatelyFast-NeoForge-1.6.14%2B1.21.1.jar",
       "scope": "client",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/ImmediatelyFast-NeoForge-1.6.14%2B1.21.1.jar"
+      "enabled": true
     },
     {
       "id": "mousetweaks",
@@ -1197,9 +1197,9 @@
       "source_folder": "modsCliente",
       "size": 1510018,
       "sha256": "3983b981da4a0583c7e58184a8631a23e56cc3b81f4cb53491ca600382879b82",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/entityculling-neoforge-1.11.2-mc1.21.1.jar",
       "scope": "client",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/entityculling-neoforge-1.11.2-mc1.21.1.jar"
+      "enabled": true
     },
     {
       "id": "holdmyitems",
@@ -1390,10 +1390,10 @@
       ],
       "size": 1416263,
       "file": "ftb-library-neoforge-2101.1.32.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/ftb-library-neoforge-2101.1.32.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.32.jar",
       "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
-      "source_folder": "modsServer",
-      "scope": "server",
+      "source_folder": "mods",
+      "scope": "general",
       "enabled": true
     }
   ]
