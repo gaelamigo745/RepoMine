@@ -189,6 +189,24 @@
       "enabled": true
     },
     {
+      "file": "Zeta-1.1-40.jar",
+      "source_folder": "mods",
+      "size": 763725,
+      "sha256": "4f17d1a2b9fd6d18ddb7697aa451db7fb154053b8648f79de279ae0d7e68a2fa",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Zeta-1.1-40.jar"
+    },
+    {
+      "file": "aeroportals-1.21.1-1.3.3.jar",
+      "source_folder": "mods",
+      "size": 503895,
+      "sha256": "6acf27b43647e5daa5e5fd2d99545a1cb459b30de410a936d9336aad2b447575",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/aeroportals-1.21.1-1.3.3.jar"
+    },
+    {
       "id": "alexsmobs",
       "ids": [
         "alexsmobs"
@@ -532,6 +550,15 @@
       "enabled": true
     },
     {
+      "file": "createaddition-1.6.0.jar",
+      "source_folder": "mods",
+      "size": 1661802,
+      "sha256": "41876c3780b70365a1848994d146a73423cc19fbe86485885795d9e7d855e7e9",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createaddition-1.6.0.jar"
+    },
+    {
       "id": "aeronautics_curios_compat",
       "ids": [
         "aeronautics_curios_compat"
@@ -697,6 +724,19 @@
       "enabled": true
     },
     {
+      "id": "ftblibrary",
+      "ids": [
+        "ftblibrary"
+      ],
+      "size": 1416263,
+      "file": "ftb-library-neoforge-2101.1.32.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.32.jar",
+      "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true
+    },
+    {
       "id": "fusion",
       "ids": [
         "fusion"
@@ -734,6 +774,15 @@
       "source_folder": "mods",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "integrated_api-neoforge-1.21.1-1.8.2.jar",
+      "source_folder": "mods",
+      "size": 478502,
+      "sha256": "8992026957c77a37507052b628b93a58d3c3a4b1e303d0a4060bc305fb7c7a7c",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/integrated_api-neoforge-1.21.1-1.8.2.jar"
     },
     {
       "id": "interiors",
@@ -830,6 +879,15 @@
       "source_folder": "mods",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "moonlight-1.21.1-3.7.1-neoforge.jar",
+      "source_folder": "mods",
+      "size": 2303727,
+      "sha256": "0a755b1f5bfc40e1553c55471ebe42096eb537d5c7fa5fb6b5a5f145656604db",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/moonlight-1.21.1-3.7.1-neoforge.jar"
     },
     {
       "id": "ntgl",
@@ -1381,19 +1439,6 @@
       "sha256": "4da8e4d461ceef1a5e6f6705265fe24239b132cdc408eb77787231cb56c219bf",
       "source_folder": "modsServer",
       "scope": "server",
-      "enabled": true
-    },
-    {
-      "id": "ftblibrary",
-      "ids": [
-        "ftblibrary"
-      ],
-      "size": 1416263,
-      "file": "ftb-library-neoforge-2101.1.32.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.32.jar",
-      "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
-      "source_folder": "mods",
-      "scope": "general",
       "enabled": true
     }
   ]
