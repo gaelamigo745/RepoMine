@@ -247,6 +247,21 @@ def generate_manifest(log=print, progress=None, config=None) -> bool:
         log(f"No existe la carpeta: {MODS_PATH}")
         return False
 
+    additional_sources = PROJECT_DIR / "docs" / "mods-descargas-adicionales.json"
+    if additional_sources.exists():
+        try:
+            from descargar_mods_adicionales import verify
+            for item in json.loads(additional_sources.read_text(encoding="utf-8")):
+                name = item["file"]
+                if Path(name).name != name or not name.endswith(".jar"):
+                    raise ValueError(f"Nombre adicional inválido: {name}")
+                if not verify(MODS_PATH / name, item):
+                    log(f"Falta o está dañado {name}. Ejecuta python descargar_mods_adicionales.py antes de generar el catálogo.")
+                    return False
+        except (OSError, ValueError, KeyError, zipfile.BadZipFile) as error:
+            log(f"Fuentes de mods adicionales inválidas: {error}")
+            return False
+
     jar_files = [(section, jar) for section, directory in mod_directories().items()
                  for jar in sorted(directory.glob("*.jar"), key=lambda p: p.name.lower())]
     if not jar_files:

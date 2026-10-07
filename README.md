@@ -128,7 +128,7 @@ Los mods siguen descargándose desde GitHub; cada actualización de JAR aumenta 
 | --- | --- |
 | `mods/` | Cliente y servidor. |
 | `modsCliente/` | Solo cliente: renderizado, mapas, interfaz y efectos visuales. |
-| `modsServer/` | Solo servidor: FTB Essentials y su biblioteca; coloca aquí el mod de métricas del panel. |
+| `modsServer/` | Solo servidor: FTB Essentials; coloca aquí el mod de métricas del panel. FTB Library está en `mods/` porque registra contenido que necesita el cliente. |
 | `shared-config/` | Archivos que se instalan bajo `config/`, respetando sus subcarpetas. |
 
 El launcher 1.2.0 instala `mods` + `modsCliente` dentro de la carpeta local `mods/`. Nunca descarga `modsServer`. El núcleo permite seleccionar `target="server"` para instalar `mods` + `modsServer`; el agente/panel del servidor debe integrar esta selección por separado. No copies `modsCliente` al servidor.
@@ -142,3 +142,16 @@ Se retiró Spark. Los mods descargados en esta actualización y sus procedencias
 **Pendiente de regeneración por el administrador:** se conservaron los SHA-256 previos al reorganizar el catálogo, sin calcular los hashes de los nueve JAR nuevos ni de la configuración. Ejecuta `python generar_manifest.py --generate` desde la raíz y publica `manifest.json` antes de distribuir este pack. El catálogo anterior contenía solamente un mod. Se marcó `catalog_pending: true` para impedir una instalación incompleta; generar y publicar el manifiesto completo elimina esa marca y habilita la instalación. Compila y distribuye también el launcher actualizado; no se creó una Release automáticamente.
 
 Distant Horizons, shaders y efectos visuales permanecen en `modsCliente`; no se ha implementado un selector de mods opcionales. Para un perfil ligero conviene excluirlos en una futura variante del catálogo. Las pruebas de Python comprueban la selección y sincronización de archivos; falta probar una partida y los vehículos con Lithium y Entity Culling.
+
+## IDAS, trenes, electricidad y portales
+
+Se incorporan AeroPortals 1.3.3, Crafts & Additions 1.6.0 y bibliotecas de IDAS. Steam ’n’ Rails será el port no oficial 0.3.0-beta.2, compatible según sus requisitos con Create 6.0.10 y NeoForge 21.1.233. Los detalles y límites de la revisión están en `docs/revision-create-portales.md`.
+
+Cuatro JAR grandes requieren descargar las publicaciones oficiales antes de generar el catálogo:
+
+```sh
+python descargar_mods_adicionales.py
+python generar_manifest.py --generate
+```
+
+El primer comando descarga IDAS, Steam ’n’ Rails, Quark y Supplementaries en `mods/` y comprueba los SHA-512 del autor. El segundo genera los hashes del catálogo; publica también los cuatro archivos descargados. El generador impide generar un catálogo incompleto. Con todos los archivos son 119 JAR (98 comunes, 20 de cliente, 1 de servidor). FTB Library queda en `mods/`; se elimina su copia de `modsServer/`.
