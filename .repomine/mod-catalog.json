@@ -1482,9 +1482,18 @@
       "size": 4934688,
       "sha256": "7af3bbc34948cc0f833946fd4b0d2db7ed608f67a12702be4df6f731a4b66290",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/voicechat-neoforge-1.21.1-2.6.24.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "repomine-skins-neoforge-1.21.1-1.0.0.jar",
+      "size": 44731,
+      "sha256": "8cf64d58634a9fa36876f32dd1eaa55146f85ca93395242bbbf09c792bcde5df",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/voicechat-neoforge-1.21.1-2.6.24.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.0.jar"
     }
   ]
 }
