@@ -1203,6 +1203,34 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
       "sha256": "b5c30321b46cfaa521645a04aff89d2804d8167a25bb23ad4b1ae8da73093a2f",
       "source_folder": "modsCliente"
+    },
+    {
+      "file": "MobileNetworks-4.0.0.jar",
+      "size": 1034915,
+      "sha256": "685a7e981def23d5fa1d6cb92ef149da7e8b5f628a805fe0f2b47dec1cae9f3a",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/MobileNetworks-4.0.0.jar"
+    },
+    {
+      "file": "Mantle-1.21.1-RepoMine-experimental.jar",
+      "size": 1677743,
+      "sha256": "4be6616e7211035a46b22378c263d66049174415ade67b5fc36117ff41f237af",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-experimental.jar"
+    },
+    {
+      "file": "TinkersConstruct-1.21.1-RepoMine-experimental.jar",
+      "size": 22147159,
+      "sha256": "8c4e0ec5bae4a460fee754d51b888665187228f973802a6a9acaa7a7222f6b3e",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-experimental.jar"
+    },
+    {
+      "file": "CustomPlayerModels-1.21-0.6.27a.jar",
+      "size": 2793136,
+      "sha256": "b5d3a473998648eefdf646e10a48af95dac57add0df681ca4407e83c716d6c84",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CustomPlayerModels-1.21-0.6.27a.jar"
     }
   ],
   "resourcepacks": [
