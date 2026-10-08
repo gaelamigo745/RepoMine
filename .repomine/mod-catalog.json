@@ -1174,7 +1174,7 @@
       "sha256": "fb0dc1f4bb36f471fafc86fee12b963f036ddf8d4622653509d884bbed96b1e5",
       "source_folder": "mods",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "distanthorizons",
@@ -1455,27 +1455,36 @@
       "size": 1677743,
       "sha256": "4be6616e7211035a46b22378c263d66049174415ade67b5fc36117ff41f237af",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-experimental.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-experimental.jar"
+      "enabled": true
     },
     {
       "file": "TinkersConstruct-1.21.1-RepoMine-experimental.jar",
       "size": 22147159,
       "sha256": "8c4e0ec5bae4a460fee754d51b888665187228f973802a6a9acaa7a7222f6b3e",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-experimental.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-experimental.jar"
+      "enabled": true
     },
     {
       "file": "CustomPlayerModels-1.21-0.6.27a.jar",
       "size": 2793136,
       "sha256": "b5d3a473998648eefdf646e10a48af95dac57add0df681ca4407e83c716d6c84",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CustomPlayerModels-1.21-0.6.27a.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "voicechat-neoforge-1.21.1-2.6.24.jar",
+      "size": 4934688,
+      "sha256": "7af3bbc34948cc0f833946fd4b0d2db7ed608f67a12702be4df6f731a4b66290",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CustomPlayerModels-1.21-0.6.27a.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/voicechat-neoforge-1.21.1-2.6.24.jar"
     }
   ]
 }
