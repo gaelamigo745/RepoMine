@@ -1457,7 +1457,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-experimental.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "TinkersConstruct-1.21.1-RepoMine-experimental.jar",
@@ -1466,7 +1466,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-experimental.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "CustomPlayerModels-1.21-0.6.27a.jar",
@@ -1494,6 +1494,24 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.0.jar",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "Mantle-1.21.1-RepoMine-esMX-experimental.jar",
+      "size": 1679484,
+      "sha256": "a581d30c72794542311f6e00e2e15fad3f001cc02f5c0f22a7390802e228ea0c",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-esMX-experimental.jar"
+    },
+    {
+      "file": "TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
+      "size": 22475218,
+      "sha256": "2b7a50ad8651ad5a6f5b9da12dfb67061aedcb3ce592d82568e1e774c57e3d77",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar"
     }
   ]
 }
