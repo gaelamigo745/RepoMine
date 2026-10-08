@@ -1475,7 +1475,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CustomPlayerModels-1.21-0.6.27a.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "voicechat-neoforge-1.21.1-2.6.24.jar",
@@ -1491,9 +1491,9 @@
       "size": 44731,
       "sha256": "8cf64d58634a9fa36876f32dd1eaa55146f85ca93395242bbbf09c792bcde5df",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.0.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.0.jar"
+      "enabled": true
     }
   ]
 }

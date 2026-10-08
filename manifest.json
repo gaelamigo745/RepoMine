@@ -1214,13 +1214,6 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-experimental.jar"
     },
     {
-      "file": "CustomPlayerModels-1.21-0.6.27a.jar",
-      "size": 2793136,
-      "sha256": "b5d3a473998648eefdf646e10a48af95dac57add0df681ca4407e83c716d6c84",
-      "source_folder": "mods",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/CustomPlayerModels-1.21-0.6.27a.jar"
-    },
-    {
       "file": "voicechat-neoforge-1.21.1-2.6.24.jar",
       "size": 4934688,
       "sha256": "7af3bbc34948cc0f833946fd4b0d2db7ed608f67a12702be4df6f731a4b66290",
