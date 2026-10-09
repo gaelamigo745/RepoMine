@@ -1183,10 +1183,10 @@
       ],
       "size": 30113661,
       "file": "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
       "sha256": "daba497eaaefe535f04f2ee6f6be11485d3d5b46676fbf0a792d26e178ef4785",
-      "source_folder": "modsCliente",
-      "scope": "client",
+      "source_folder": "mods",
+      "scope": "general",
       "enabled": true
     },
     {
@@ -1493,7 +1493,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.0.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "Mantle-1.21.1-RepoMine-esMX-experimental.jar",
@@ -1512,6 +1512,33 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "create_flight_control-neoforge-0.7.7.jar",
+      "size": 4318917,
+      "sha256": "acc79b059ceb74358f4039e6c194b2705564b6c9366d7aa27fed4b2e83b6a8ed",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_flight_control-neoforge-0.7.7.jar"
+    },
+    {
+      "file": "repomine-skins-neoforge-1.21.1-1.0.1.jar",
+      "size": 40580,
+      "sha256": "21a10111b76e6c9362b49f3dd9fd2fcf729ae780d35f7fbff4db60045b40ea39",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.1.jar"
+    },
+    {
+      "file": "repomine-telemetry-neoforge-1.21.1-1.2.1.jar",
+      "size": 18225,
+      "sha256": "0ad530466c18e6c3dfbe98ece9a5052bc4913c5c2e8becee6c51a80ca62b3af4",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.2.1.jar"
     }
   ]
 }
