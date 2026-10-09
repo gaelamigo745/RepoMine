@@ -1572,9 +1572,36 @@
       "size": 5414670,
       "sha256": "827ac3921986d0d5e9c24ef2280f47c110d22dc14d284efb65330010d2e9517d",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap-5.7-neoforge.jar",
+      "scope": "server",
+      "enabled": true
+    },
+    {
+      "file": "bluemap3d-1.21.1-1.1.0.jar",
+      "size": 159424,
+      "sha256": "5ae65af6f8ae5f5d3c9d038939aac0919ceb09abc11787f6ecc702bcd169248f",
+      "source_folder": "modsServer",
       "scope": "server",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap-5.7-neoforge.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d-1.21.1-1.1.0.jar"
+    },
+    {
+      "file": "bluemap3d_create-1.21.1-1.1.0.jar",
+      "size": 108253,
+      "sha256": "5d35fa60e9f2a37c6c7ea1eed87492458b96d3dbc5a41244fb4472d5e7506e54",
+      "source_folder": "modsServer",
+      "scope": "server",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_create-1.21.1-1.1.0.jar"
+    },
+    {
+      "file": "bluemap3d_sable-1.21.1-1.1.0.jar",
+      "size": 24228,
+      "sha256": "893b3bdd97ba872819a65292a4dbfd232df7a3ede8fdd836e7fb50a2a6763167",
+      "source_folder": "modsServer",
+      "scope": "server",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_sable-1.21.1-1.1.0.jar"
     }
   ]
 }
