@@ -1233,6 +1233,13 @@
       "sha256": "0ad530466c18e6c3dfbe98ece9a5052bc4913c5c2e8becee6c51a80ca62b3af4",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.2.1.jar"
+    },
+    {
+      "file": "1.21.1 SecurityCraft v1.10.1.jar",
+      "size": 4951098,
+      "sha256": "cce82e9f2b74b2c678241a24eeca6c656a07f55f73e16d4d860591db5ed4435f",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/1.21.1%20SecurityCraft%20v1.10.1.jar"
     }
   ],
   "resourcepacks": [

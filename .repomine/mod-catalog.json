@@ -1518,27 +1518,36 @@
       "size": 4318917,
       "sha256": "acc79b059ceb74358f4039e6c194b2705564b6c9366d7aa27fed4b2e83b6a8ed",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_flight_control-neoforge-0.7.7.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/create_flight_control-neoforge-0.7.7.jar"
+      "enabled": true
     },
     {
       "file": "repomine-skins-neoforge-1.21.1-1.0.1.jar",
       "size": 40580,
       "sha256": "21a10111b76e6c9362b49f3dd9fd2fcf729ae780d35f7fbff4db60045b40ea39",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.1.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.1.jar"
+      "enabled": true
     },
     {
       "file": "repomine-telemetry-neoforge-1.21.1-1.2.1.jar",
       "size": 18225,
       "sha256": "0ad530466c18e6c3dfbe98ece9a5052bc4913c5c2e8becee6c51a80ca62b3af4",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.2.1.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "1.21.1 SecurityCraft v1.10.1.jar",
+      "size": 4951098,
+      "sha256": "cce82e9f2b74b2c678241a24eeca6c656a07f55f73e16d4d860591db5ed4435f",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.2.1.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/1.21.1%20SecurityCraft%20v1.10.1.jar"
     }
   ]
 }
