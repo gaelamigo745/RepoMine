@@ -1529,7 +1529,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.0.1.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "repomine-telemetry-neoforge-1.21.1-1.2.1.jar",
@@ -1554,9 +1554,18 @@
       "size": 22870,
       "sha256": "0e3cff8158d54be9c11aee59ac14187ec2f70b00bc1f97d2d750639e855b37de",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.0.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "repomine-skins-neoforge-1.21.1-1.1.0.jar",
+      "size": 53755,
+      "sha256": "95a828211f69e587f01ef043342219d9758cbe6fda1d201d7a68aff87164e4c3",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.0.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.1.0.jar"
     }
   ]
 }
