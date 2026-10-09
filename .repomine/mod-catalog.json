@@ -1563,9 +1563,18 @@
       "size": 53755,
       "sha256": "95a828211f69e587f01ef043342219d9758cbe6fda1d201d7a68aff87164e4c3",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.1.0.jar",
       "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "bluemap-5.7-neoforge.jar",
+      "size": 5414670,
+      "sha256": "827ac3921986d0d5e9c24ef2280f47c110d22dc14d284efb65330010d2e9517d",
+      "source_folder": "modsServer",
+      "scope": "server",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.1.0.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap-5.7-neoforge.jar"
     }
   ]
 }
