@@ -1625,9 +1625,9 @@
       "file": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
       "size": 28289212,
       "sha256": "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab",
-      "source_folder": "mods",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
-      "scope": "general",
+      "source_folder": "modsCliente",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+      "scope": "client",
       "enabled": true
     }
   ]
