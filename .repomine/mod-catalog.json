@@ -1608,18 +1608,18 @@
       "size": 861829,
       "sha256": "8cff63e900acd55bb39d41978cc2a70a974e326e2038c30ff20ccfde4c953a43",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
+      "enabled": true
     },
     {
       "file": "Chunky-NeoForge-1.4.23.jar",
       "size": 340572,
       "sha256": "d72f235cf1f56f2c374f52c00bdda5034524b28142305a84cfc123a3f92ad274",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/Chunky-NeoForge-1.4.23.jar",
       "scope": "server",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/Chunky-NeoForge-1.4.23.jar"
+      "enabled": true
     }
   ]
 }

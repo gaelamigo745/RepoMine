@@ -1257,7 +1257,22 @@
       "sha256": "8e44b29560d2e7d952c0a4f77f0451e6dcb048f827189bffc712b446be8de7f2"
     }
   ],
-  "configs": [],
+  "configs": [
+    {
+      "file": "DistantHorizons.toml",
+      "size": 558,
+      "sha256": "2684e0d74df3679618dc361a49f94adb984e8b22fbaec178f53e008200ee2856",
+      "policy": "default",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/shared-config/DistantHorizons.toml"
+    },
+    {
+      "file": "sodium-options.json",
+      "size": 353,
+      "sha256": "ff575e4c7d74bae4b1997ca1cd0323330e40b0a3449ba96a1ab731ee72b26e22",
+      "policy": "default",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/shared-config/sodium-options.json"
+    }
+  ],
   "server": {
     "name": "Servidor Gael",
     "address": "tecserver.playit.plus"

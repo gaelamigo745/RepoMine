@@ -1,0 +1,21 @@
+# Perfil de prueba RepoMine: calidad minima, DH activo.
+# Esquema DH 2.x. Confirmar los valores efectivos tras iniciar el cliente.
+_version = 2
+
+[client.advanced.graphics.quality]
+lodChunkRenderDistanceRadius = 32
+maxHorizontalResolution = "CHUNK"
+horizontalQuality = "LOWEST"
+verticalQuality = "HEIGHT_MAP"
+transparency = "DISABLED"
+
+[client.advanced.graphics.ssao]
+enabled = false
+
+[client.advanced.graphics.genericRendering]
+enableCloudRendering = false
+enableBeaconRendering = false
+
+[client.advanced.graphics.noiseTextureSettings]
+noiseEnabled = false
+
