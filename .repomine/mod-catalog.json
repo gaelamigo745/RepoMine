@@ -1187,7 +1187,7 @@
       "sha256": "daba497eaaefe535f04f2ee6f6be11485d3d5b46676fbf0a792d26e178ef4785",
       "source_folder": "mods",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "fps_overlay",
@@ -1626,9 +1626,9 @@
       "size": 28289212,
       "sha256": "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
+      "enabled": true
     }
   ]
 }

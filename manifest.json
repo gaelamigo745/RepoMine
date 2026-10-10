@@ -981,17 +981,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "distanthorizons",
-      "ids": [
-        "distanthorizons"
-      ],
-      "size": 30113661,
-      "file": "DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.0.3-b-1.21.1-fabric-neoforge.jar",
-      "sha256": "daba497eaaefe535f04f2ee6f6be11485d3d5b46676fbf0a792d26e178ef4785",
-      "source_folder": "mods"
-    },
-    {
       "id": "fps_overlay",
       "ids": [
         "fps_overlay"
