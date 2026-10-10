@@ -10,5 +10,120 @@
   "server_address": "tecserver.playit.plus",
   "config_policies": {
     "immediatelyfast.json": "default"
+  },
+  "client_settings": {
+    "schema_version": 1,
+    "revision": 4,
+    "apply_when": "before_launch",
+    "profiles": {
+      "ultra1323": {
+        "player_name": "Ultra1323",
+        "revision": 2,
+        "updated_at": "2026-10-10T16:15:40.822Z",
+        "minecraft_version": "1.21.1",
+        "vanilla": {
+          "renderDistance": 12,
+          "simulationDistance": 12,
+          "graphics": "FANCY",
+          "particles": "ALL",
+          "vsync": false,
+          "fpsLimit": 260,
+          "mipmapLevels": 4,
+          "biomeBlendRadius": 2,
+          "entityDistanceScaling": 1,
+          "fullscreen": true
+        },
+        "distant_horizons": {
+          "version": "3.3.3",
+          "file": "config/DistantHorizons.toml",
+          "values": {
+            "client.advanced.graphics.quality.lodChunkRenderDistanceRadius": 32,
+            "client.advanced.graphics.quality.horizontalQuality": "LOWEST",
+            "client.advanced.graphics.quality.maxHorizontalResolution": "BLOCK",
+            "client.advanced.graphics.quality.verticalQuality": "HEIGHT_MAP",
+            "client.advanced.graphics.quality.transparency": "DISABLED",
+            "client.advanced.graphics.quality.lodBiomeBlending": 0,
+            "client.advanced.graphics.enableSsao": false,
+            "client.advanced.graphics.enableAntiAliasing": false,
+            "client.advanced.graphics.noiseTexture.enableNoiseTexture": false,
+            "client.advanced.graphics.genericRendering.enableCloudRendering": false,
+            "client.advanced.graphics.fog.enableDhFog": false,
+            "client.advanced.graphics.genericRendering.enableBeaconRendering": false,
+            "client.advanced.graphics.culling.enableCaveCulling": true
+          }
+        },
+        "sodium": {
+          "version": "0.8.12+mc1.21.1",
+          "file": "config/sodium-options.json",
+          "values": {
+            "quality.weather_quality": "DEFAULT",
+            "quality.leaves_quality": "DEFAULT",
+            "quality.enable_vignette": true,
+            "quality.use_closest_point_entity_sort": false,
+            "performance.chunk_builder_threads": 0,
+            "performance.animate_only_visible_textures": true,
+            "performance.use_entity_culling": true,
+            "performance.use_fog_occlusion": true,
+            "performance.use_block_face_culling": true,
+            "advanced.use_advanced_staging_buffers": true,
+            "advanced.cpu_render_ahead_limit": 3
+          }
+        }
+      },
+      "qmigo": {
+        "player_name": "Qmigo",
+        "revision": 4,
+        "updated_at": "2026-10-10T16:29:15.755Z",
+        "minecraft_version": "1.21.1",
+        "vanilla": {
+          "fullscreen": false,
+          "entityDistanceScaling": 2,
+          "biomeBlendRadius": 2,
+          "mipmapLevels": 4,
+          "fpsLimit": 180,
+          "vsync": false,
+          "particles": "ALL",
+          "graphics": "FANCY",
+          "simulationDistance": 10,
+          "renderDistance": 15
+        },
+        "distant_horizons": {
+          "version": "3.3.3",
+          "file": "config/DistantHorizons.toml",
+          "values": {
+            "client.advanced.graphics.culling.enableCaveCulling": true,
+            "client.advanced.graphics.quality.lodChunkRenderDistanceRadius": 32,
+            "client.advanced.graphics.quality.horizontalQuality": "LOWEST",
+            "client.advanced.graphics.quality.maxHorizontalResolution": "CHUNK",
+            "client.advanced.graphics.quality.verticalQuality": "HEIGHT_MAP",
+            "client.advanced.graphics.quality.transparency": "DISABLED",
+            "client.advanced.graphics.quality.lodBiomeBlending": 0,
+            "client.advanced.graphics.enableSsao": false,
+            "client.advanced.graphics.enableAntiAliasing": false,
+            "client.advanced.graphics.noiseTexture.enableNoiseTexture": false,
+            "client.advanced.graphics.fog.enableDhFog": false,
+            "client.advanced.graphics.genericRendering.enableCloudRendering": false,
+            "client.advanced.graphics.genericRendering.enableBeaconRendering": false
+          }
+        },
+        "sodium": {
+          "version": "0.8.12+mc1.21.1",
+          "file": "config/sodium-options.json",
+          "values": {
+            "advanced.cpu_render_ahead_limit": 5,
+            "advanced.use_advanced_staging_buffers": true,
+            "performance.use_block_face_culling": true,
+            "performance.use_fog_occlusion": true,
+            "performance.use_entity_culling": true,
+            "performance.animate_only_visible_textures": true,
+            "performance.chunk_builder_threads": 0,
+            "quality.use_closest_point_entity_sort": true,
+            "quality.enable_vignette": true,
+            "quality.leaves_quality": "FANCY",
+            "quality.weather_quality": "DEFAULT"
+          }
+        }
+      }
+    }
   }
 }
