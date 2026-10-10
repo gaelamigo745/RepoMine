@@ -1240,6 +1240,13 @@
       "sha256": "95a828211f69e587f01ef043342219d9758cbe6fda1d201d7a68aff87164e4c3",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-skins-neoforge-1.21.1-1.1.0.jar"
+    },
+    {
+      "file": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+      "size": 861829,
+      "sha256": "8cff63e900acd55bb39d41978cc2a70a974e326e2038c30ff20ccfde4c953a43",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
     }
   ],
   "resourcepacks": [

@@ -1581,27 +1581,45 @@
       "size": 159424,
       "sha256": "5ae65af6f8ae5f5d3c9d038939aac0919ceb09abc11787f6ecc702bcd169248f",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d-1.21.1-1.1.0.jar",
       "scope": "server",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d-1.21.1-1.1.0.jar"
+      "enabled": true
     },
     {
       "file": "bluemap3d_create-1.21.1-1.1.0.jar",
       "size": 108253,
       "sha256": "5d35fa60e9f2a37c6c7ea1eed87492458b96d3dbc5a41244fb4472d5e7506e54",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_create-1.21.1-1.1.0.jar",
       "scope": "server",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_create-1.21.1-1.1.0.jar"
+      "enabled": true
     },
     {
       "file": "bluemap3d_sable-1.21.1-1.1.0.jar",
       "size": 24228,
       "sha256": "893b3bdd97ba872819a65292a4dbfd232df7a3ede8fdd836e7fb50a2a6763167",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_sable-1.21.1-1.1.0.jar",
+      "scope": "server",
+      "enabled": true
+    },
+    {
+      "file": "emotecraft-for-MC1.21.1-2.4.12-neoforge.jar",
+      "size": 861829,
+      "sha256": "8cff63e900acd55bb39d41978cc2a70a974e326e2038c30ff20ccfde4c953a43",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
+    },
+    {
+      "file": "Chunky-NeoForge-1.4.23.jar",
+      "size": 340572,
+      "sha256": "d72f235cf1f56f2c374f52c00bdda5034524b28142305a84cfc123a3f92ad274",
+      "source_folder": "modsServer",
       "scope": "server",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/bluemap3d_sable-1.21.1-1.1.0.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/Chunky-NeoForge-1.4.23.jar"
     }
   ]
 }
