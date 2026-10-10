@@ -1247,6 +1247,13 @@
       "sha256": "8cff63e900acd55bb39d41978cc2a70a974e326e2038c30ff20ccfde4c953a43",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/emotecraft-for-MC1.21.1-2.4.12-neoforge.jar"
+    },
+    {
+      "file": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+      "size": 28289212,
+      "sha256": "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
     }
   ],
   "resourcepacks": [
