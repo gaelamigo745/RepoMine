@@ -1305,10 +1305,10 @@
       ],
       "size": 1616910,
       "file": "jei-1.21.1-neoforge-19.32.0.359.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/jei-1.21.1-neoforge-19.32.0.359.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/jei-1.21.1-neoforge-19.32.0.359.jar",
       "sha256": "0169e38d4771b1a0a6bd9fc92734297105fff2f6ad8a4ed73ad38139b824ea54",
-      "source_folder": "modsCliente",
-      "scope": "client",
+      "source_folder": "mods",
+      "scope": "general",
       "enabled": true
     },
     {
@@ -1357,10 +1357,10 @@
       ],
       "size": 58343,
       "file": "refinedstorage-jei-integration-neoforge-1.0.0.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/refinedstorage-jei-integration-neoforge-1.0.0.jar",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/refinedstorage-jei-integration-neoforge-1.0.0.jar",
       "sha256": "e1721529412de7be9087702c46acbe1c4d1d594418df73a2bbebe3780396fb79",
-      "source_folder": "modsCliente",
-      "scope": "client",
+      "source_folder": "mods",
+      "scope": "general",
       "enabled": true
     },
     {
