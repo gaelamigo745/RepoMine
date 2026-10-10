@@ -1200,7 +1200,7 @@
       "sha256": "4101c53632782f2ddc1eb0e227e2ee4442665615032e0728810045e3e0c91eb3",
       "source_folder": "modsCliente",
       "scope": "client",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
