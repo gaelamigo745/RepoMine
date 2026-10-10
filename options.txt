@@ -10,4 +10,4 @@ mipmapLevels:0
 biomeBlendRadius:0
 enableVsync:false
 maxFps:60
-
+lang:es_mx
