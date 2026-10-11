@@ -261,17 +261,6 @@
       "source_folder": "mods"
     },
     {
-      "id": "carryon",
-      "ids": [
-        "carryon"
-      ],
-      "size": 358503,
-      "file": "carryon-neoforge-1.21.1-2.2.4.4-patched-no-slowness.jar",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/carryon-neoforge-1.21.1-2.2.4.4-patched-no-slowness.jar",
-      "sha256": "0c28662a125de91873052d0b36a2c99f07b0f83769666e1ed1003cf101806f4b",
-      "source_folder": "mods"
-    },
-    {
       "id": "chipped",
       "ids": [
         "chipped"
@@ -1206,13 +1195,6 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/1.21.1%20SecurityCraft%20v1.10.1.jar"
     },
     {
-      "file": "repomine-telemetry-neoforge-1.21.1-1.3.0.jar",
-      "size": 22870,
-      "sha256": "0e3cff8158d54be9c11aee59ac14187ec2f70b00bc1f97d2d750639e855b37de",
-      "source_folder": "mods",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.0.jar"
-    },
-    {
       "file": "repomine-skins-neoforge-1.21.1-1.1.0.jar",
       "size": 53755,
       "sha256": "95a828211f69e587f01ef043342219d9758cbe6fda1d201d7a68aff87164e4c3",
@@ -1232,6 +1214,20 @@
       "sha256": "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab",
       "source_folder": "modsCliente",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
+    },
+    {
+      "file": "repomine-telemetry-neoforge-1.21.1-1.3.1.jar",
+      "size": 24487,
+      "sha256": "440a9d855a61ee04db8c2bd632d18274a388d0bc1fd154af115a27830b24f1aa",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.1.jar"
+    },
+    {
+      "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "size": 361486,
+      "sha256": "d4f9576b6593db9486a89d35c1d84c31ee89141d99dbae2aa470350ab53c4e09",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/carryon-neoforge-1.21.1-2.2.6.13.jar"
     }
   ],
   "resourcepacks": [

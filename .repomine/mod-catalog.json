@@ -317,7 +317,7 @@
       "sha256": "0c28662a125de91873052d0b36a2c99f07b0f83769666e1ed1003cf101806f4b",
       "source_folder": "mods",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "chipped",
@@ -1556,7 +1556,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.0.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "repomine-skins-neoforge-1.21.1-1.1.0.jar",
@@ -1629,6 +1629,33 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
       "scope": "client",
       "enabled": true
+    },
+    {
+      "file": "carryon-neoforge-26.2-2.11.2.jar",
+      "size": 376806,
+      "sha256": "ddb85e78657a4e0d162f5d7a65103c297118d5517c5ea4871c70fc41936900e3",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": false,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/carryon-neoforge-26.2-2.11.2.jar"
+    },
+    {
+      "file": "repomine-telemetry-neoforge-1.21.1-1.3.1.jar",
+      "size": 24487,
+      "sha256": "440a9d855a61ee04db8c2bd632d18274a388d0bc1fd154af115a27830b24f1aa",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.1.jar"
+    },
+    {
+      "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
+      "size": 361486,
+      "sha256": "d4f9576b6593db9486a89d35c1d84c31ee89141d99dbae2aa470350ab53c4e09",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/carryon-neoforge-1.21.1-2.2.6.13.jar"
     }
   ]
 }
