@@ -13,7 +13,7 @@
   },
   "client_settings": {
     "schema_version": 1,
-    "revision": 6,
+    "revision": 7,
     "apply_when": "before_launch",
     "profiles": {
       "ultra1323": {
@@ -123,6 +123,25 @@
         },
         "revision": 1,
         "updated_at": "2026-10-10T16:55:06.694Z"
+      },
+      "harahk": {
+        "player_name": "HaraHk",
+        "minecraft_version": "1.21.1",
+        "vanilla": {
+          "fpsLimit": 120
+        },
+        "sodium": {
+          "version": "0.8.12+mc1.21.1",
+          "file": "config/sodium-options.json",
+          "values": {}
+        },
+        "distant_horizons": {
+          "version": "3.3.3",
+          "file": "config/DistantHorizons.toml",
+          "values": {}
+        },
+        "revision": 1,
+        "updated_at": "2026-10-13T18:16:06.970Z"
       }
     }
   }
