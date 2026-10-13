@@ -1673,7 +1673,16 @@
       "source_folder": "modsServer",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/repomine_chunk_lab-0.2.0-alpha.jar",
       "scope": "server",
-      "enabled": true
+      "enabled": false
+    },
+    {
+      "file": "repomine_chunk_lab-0.3.0-alpha.jar",
+      "size": 32901,
+      "sha256": "6aa009be84752381978f1dbd7310ac4c04db43ba9198a8bc92a93c97203a2560",
+      "source_folder": "modsServer",
+      "scope": "server",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/repomine_chunk_lab-0.3.0-alpha.jar"
     }
   ]
 }
