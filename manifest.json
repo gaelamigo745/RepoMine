@@ -1228,6 +1228,20 @@
       "sha256": "d4f9576b6593db9486a89d35c1d84c31ee89141d99dbae2aa470350ab53c4e09",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/carryon-neoforge-1.21.1-2.2.6.13.jar"
+    },
+    {
+      "file": "c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar",
+      "size": 3717365,
+      "sha256": "ba33f46c615192494ad1c1ede8a85a1a884736eb4ac5b8bb24b357deb0692809",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/c2me-neoforge-mc1.21.1-0.4.0-alpha.0.123.jar"
+    },
+    {
+      "file": "repomine_chunk_lab-0.2.0-alpha.jar",
+      "size": 21121,
+      "sha256": "0d54b24acf7f6ef838099dd9d1b74b2c0b72523cf55147ec145388545847bd64",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine_chunk_lab-0.2.0-alpha.jar"
     }
   ],
   "resourcepacks": [
