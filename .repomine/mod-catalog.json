@@ -1689,9 +1689,9 @@
       "size": 126503,
       "sha256": "b4aeda2cab1e7f23d71c5914ecfcb5814c6e83b65202f7ee68bcd6f6f4ae5789",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/BlueMapSkins3D-3.0.0.jar",
       "scope": "server",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/BlueMapSkins3D-3.0.0.jar"
+      "enabled": true
     }
   ]
 }
