@@ -13,7 +13,7 @@
   },
   "client_settings": {
     "schema_version": 1,
-    "revision": 9,
+    "revision": 10,
     "apply_when": "before_launch",
     "profiles": {
       "ultra1323": {
@@ -180,6 +180,25 @@
         },
         "revision": 1,
         "updated_at": "2026-10-14T21:37:01.576Z"
+      },
+      "skyjaz": {
+        "player_name": "skyjaz",
+        "minecraft_version": "1.21.1",
+        "vanilla": {
+          "renderDistance": 5
+        },
+        "sodium": {
+          "version": "0.8.12+mc1.21.1",
+          "file": "config/sodium-options.json",
+          "values": {}
+        },
+        "distant_horizons": {
+          "version": "3.3.3",
+          "file": "config/DistantHorizons.toml",
+          "values": {}
+        },
+        "revision": 1,
+        "updated_at": "2026-10-14T21:38:07.829Z"
       }
     }
   }
