@@ -1680,9 +1680,18 @@
       "size": 32901,
       "sha256": "6aa009be84752381978f1dbd7310ac4c04db43ba9198a8bc92a93c97203a2560",
       "source_folder": "modsServer",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/repomine_chunk_lab-0.3.0-alpha.jar",
+      "scope": "server",
+      "enabled": true
+    },
+    {
+      "file": "BlueMapSkins3D-3.0.0.jar",
+      "size": 126503,
+      "sha256": "b4aeda2cab1e7f23d71c5914ecfcb5814c6e83b65202f7ee68bcd6f6f4ae5789",
+      "source_folder": "modsServer",
       "scope": "server",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/repomine_chunk_lab-0.3.0-alpha.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/BlueMapSkins3D-3.0.0.jar"
     }
   ]
 }
