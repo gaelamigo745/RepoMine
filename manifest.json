@@ -1263,6 +1263,13 @@
       "sha256": "2a5ec9cca187b4a031e9dd7e5eec8d0872f7d2bc355d88bda633021fa7eb71b0",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TreeChop-1.21.1-neoforge-0.19.3.jar"
+    },
+    {
+      "file": "ftb-teams-neoforge-2101.1.11.jar",
+      "size": 308236,
+      "sha256": "e6bcd670493624e6906df872a9c6af4a33fe6405cac57a32c59cd4cd5838c655",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-teams-neoforge-2101.1.11.jar"
     }
   ],
   "resourcepacks": [
