@@ -734,7 +734,7 @@
       "sha256": "6308e71fec7095f68328020a63121a966c8ef89bd3528e459c528037e3484354",
       "source_folder": "mods",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "fusion",
@@ -1743,9 +1743,18 @@
       "size": 308236,
       "sha256": "e6bcd670493624e6906df872a9c6af4a33fe6405cac57a32c59cd4cd5838c655",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-teams-neoforge-2101.1.11.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "ftb-library-neoforge-2101.1.37.jar",
+      "size": 1439881,
+      "sha256": "624c2d2d1cbadb946d967e17757bd5b2d129d4d3ed71f2da0c70607d04476ac2",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-teams-neoforge-2101.1.11.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.37.jar"
     }
   ]
 }
