@@ -1692,6 +1692,33 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsServer/BlueMapSkins3D-3.0.0.jar",
       "scope": "server",
       "enabled": true
+    },
+    {
+      "file": "railways-0.3.0-beta.2+neoforge-mc1.21.1.jar",
+      "size": 18728584,
+      "sha256": "64b74ddad661deae1cfe7e8334cfa3d39bb8ef7b761f83595ba0476c4a9bb1d5",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/railways-0.3.0-beta.2%2Bneoforge-mc1.21.1.jar"
+    },
+    {
+      "file": "ImmersiveEngineering-1.21.1-12.4.2-194.jar",
+      "size": 14232121,
+      "sha256": "45942985a4a4aebf265b8e22a0c54a96208637471f36f2532ff5d4911322debc",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ImmersiveEngineering-1.21.1-12.4.2-194.jar"
+    },
+    {
+      "file": "ftb-quests-neoforge-2101.1.36.jar",
+      "size": 1609984,
+      "sha256": "6a39982c4b3afc00b1e788041a4f0d394e1659e3b3a6e5d078cd790bc36d0018",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-quests-neoforge-2101.1.36.jar"
     }
   ]
 }
