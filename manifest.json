@@ -1266,6 +1266,13 @@
       "sha256": "624c2d2d1cbadb946d967e17757bd5b2d129d4d3ed71f2da0c70607d04476ac2",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/ftb-library-neoforge-2101.1.37.jar"
+    },
+    {
+      "file": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "size": 1221583,
+      "sha256": "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/owo-lib-neoforge-0.12.15.5-beta.1%2B1.21.jar"
     }
   ],
   "resourcepacks": [
