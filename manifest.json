@@ -1205,13 +1205,6 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/modsCliente/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
     },
     {
-      "file": "repomine-telemetry-neoforge-1.21.1-1.3.1.jar",
-      "size": 24487,
-      "sha256": "440a9d855a61ee04db8c2bd632d18274a388d0bc1fd154af115a27830b24f1aa",
-      "source_folder": "mods",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.3.1.jar"
-    },
-    {
       "file": "carryon-neoforge-1.21.1-2.2.6.13.jar",
       "size": 361486,
       "sha256": "d4f9576b6593db9486a89d35c1d84c31ee89141d99dbae2aa470350ab53c4e09",
@@ -1273,6 +1266,13 @@
       "sha256": "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/owo-lib-neoforge-0.12.15.5-beta.1%2B1.21.jar"
+    },
+    {
+      "file": "repomine-telemetry-neoforge-1.21.1-1.5.0.jar",
+      "size": 34258,
+      "sha256": "c8a2d60de0584f66c68780b018ca236497ce658f69e1d1270c1d970746770b5d",
+      "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.5.0.jar"
     }
   ],
   "resourcepacks": [
