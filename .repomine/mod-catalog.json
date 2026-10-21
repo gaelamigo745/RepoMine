@@ -1511,7 +1511,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
       "scope": "general",
-      "enabled": true
+      "enabled": false
     },
     {
       "file": "create_flight_control-neoforge-0.7.7.jar",
@@ -1770,9 +1770,9 @@
       "size": 34258,
       "sha256": "c8a2d60de0584f66c68780b018ca236497ce658f69e1d1270c1d970746770b5d",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.5.0.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.5.0.jar"
+      "enabled": true
     }
   ]
 }

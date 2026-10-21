@@ -1163,13 +1163,6 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/Mantle-1.21.1-RepoMine-esMX-experimental.jar"
     },
     {
-      "file": "TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
-      "size": 22475218,
-      "sha256": "2b7a50ad8651ad5a6f5b9da12dfb67061aedcb3ce592d82568e1e774c57e3d77",
-      "source_folder": "mods",
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar"
-    },
-    {
       "file": "create_flight_control-neoforge-0.7.7.jar",
       "size": 4318917,
       "sha256": "acc79b059ceb74358f4039e6c194b2705564b6c9366d7aa27fed4b2e83b6a8ed",
