@@ -1511,7 +1511,7 @@
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
       "scope": "general",
-      "enabled": false
+      "enabled": true
     },
     {
       "file": "create_flight_control-neoforge-0.7.7.jar",
