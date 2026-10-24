@@ -1773,6 +1773,15 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/repomine-telemetry-neoforge-1.21.1-1.5.0.jar",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "createfisheryindustry-5.1.2.jar",
+      "size": 954595,
+      "sha256": "088e37f6bd3a499e1569d6ebd3f40721ba12f146e061340600742056f7073c65",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createfisheryindustry-5.1.2.jar"
     }
   ]
 }
