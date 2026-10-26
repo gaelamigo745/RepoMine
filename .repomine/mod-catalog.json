@@ -1506,8 +1506,8 @@
     },
     {
       "file": "TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
-      "size": 22475218,
-      "sha256": "2b7a50ad8651ad5a6f5b9da12dfb67061aedcb3ce592d82568e1e774c57e3d77",
+      "size": 22984128,
+      "sha256": "41678624f4261447eef32a258523a1288e402b05bd4507b05ca38fce4ece5e37",
       "source_folder": "mods",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/TinkersConstruct-1.21.1-RepoMine-esMX-experimental.jar",
       "scope": "general",
@@ -1779,9 +1779,9 @@
       "size": 954595,
       "sha256": "088e37f6bd3a499e1569d6ebd3f40721ba12f146e061340600742056f7073c65",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createfisheryindustry-5.1.2.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createfisheryindustry-5.1.2.jar"
+      "enabled": true
     }
   ]
 }
