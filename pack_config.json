@@ -13,7 +13,7 @@
   },
   "client_settings": {
     "schema_version": 1,
-    "revision": 10,
+    "revision": 11,
     "apply_when": "before_launch",
     "profiles": {
       "ultra1323": {
@@ -199,6 +199,36 @@
         },
         "revision": 1,
         "updated_at": "2026-10-14T21:38:07.829Z"
+      },
+      "pompeyo": {
+        "player_name": "Pompeyo",
+        "minecraft_version": "1.21.1",
+        "vanilla": {
+          "entityDistanceScaling": 0.5
+        },
+        "sodium": {
+          "version": "0.8.12+mc1.21.1",
+          "file": "config/sodium-options.json",
+          "values": {}
+        },
+        "distant_horizons": {
+          "version": "3.3.3",
+          "file": "config/DistantHorizons.toml",
+          "values": {
+            "client.advanced.graphics.quality.lodBiomeBlending": 0,
+            "client.advanced.graphics.quality.horizontalQuality": "LOWEST",
+            "client.advanced.graphics.quality.maxHorizontalResolution": "CHUNK",
+            "client.advanced.graphics.quality.verticalQuality": "HEIGHT_MAP",
+            "client.advanced.graphics.quality.transparency": "DISABLED",
+            "client.advanced.graphics.enableSsao": false,
+            "client.advanced.graphics.enableAntiAliasing": false,
+            "client.advanced.graphics.noiseTexture.enableNoiseTexture": false,
+            "client.advanced.graphics.genericRendering.enableBeaconRendering": false,
+            "client.advanced.graphics.culling.enableCaveCulling": true
+          }
+        },
+        "revision": 1,
+        "updated_at": "2026-10-28T17:06:12.215Z"
       }
     }
   }
