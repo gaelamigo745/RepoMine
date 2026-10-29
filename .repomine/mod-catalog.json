@@ -1797,18 +1797,18 @@
       "size": 1623943,
       "sha256": "fbeaaa43439dcac63ececbaaaa585575e1addd1d1496e49a021b5e3e058f5010",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/hydraulic-neoforge-1.21.1-repomine-experimental.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/hydraulic-neoforge-1.21.1-repomine-experimental.jar"
+      "enabled": false
     },
     {
       "file": "geyser-neoforge-Geyser-Neoforge-2.4.4-b705.jar",
       "size": 16091689,
       "sha256": "43a509eebb14766b7ab3472d8321e34e1114063b1c83d0fd27e55211faf8942b",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/geyser-neoforge-Geyser-Neoforge-2.4.4-b705.jar",
       "scope": "general",
-      "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/geyser-neoforge-Geyser-Neoforge-2.4.4-b705.jar"
+      "enabled": false
     }
   ]
 }
