@@ -1788,9 +1788,27 @@
       "size": 36843,
       "sha256": "9d42f1dd04d668355ef40559ef8f5cd61c9ba5c0749acead2f492d3de060ed94",
       "source_folder": "mods",
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/visibletraders-0.0.7.1.jar",
+      "scope": "general",
+      "enabled": true
+    },
+    {
+      "file": "hydraulic-neoforge-1.21.1-repomine-experimental.jar",
+      "size": 1623943,
+      "sha256": "fbeaaa43439dcac63ececbaaaa585575e1addd1d1496e49a021b5e3e058f5010",
+      "source_folder": "mods",
       "scope": "general",
       "enabled": true,
-      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/visibletraders-0.0.7.1.jar"
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/hydraulic-neoforge-1.21.1-repomine-experimental.jar"
+    },
+    {
+      "file": "geyser-neoforge-Geyser-Neoforge-2.4.4-b705.jar",
+      "size": 16091689,
+      "sha256": "43a509eebb14766b7ab3472d8321e34e1114063b1c83d0fd27e55211faf8942b",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/geyser-neoforge-Geyser-Neoforge-2.4.4-b705.jar"
     }
   ]
 }
