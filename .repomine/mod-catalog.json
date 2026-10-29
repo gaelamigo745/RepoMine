@@ -200,8 +200,8 @@
     {
       "file": "aeroportals-1.21.1-1.3.3.jar",
       "source_folder": "mods",
-      "size": 503895,
-      "sha256": "6acf27b43647e5daa5e5fd2d99545a1cb459b30de410a936d9336aad2b447575",
+      "size": 505941,
+      "sha256": "4b8e6af33748abafeebe8cd36e53b7be85d24aeded63938aaaa86751c5ced52c",
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/aeroportals-1.21.1-1.3.3.jar",
       "scope": "general",
       "enabled": true
@@ -1782,6 +1782,15 @@
       "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/createfisheryindustry-5.1.2.jar",
       "scope": "general",
       "enabled": true
+    },
+    {
+      "file": "visibletraders-0.0.7.1.jar",
+      "size": 36843,
+      "sha256": "9d42f1dd04d668355ef40559ef8f5cd61c9ba5c0749acead2f492d3de060ed94",
+      "source_folder": "mods",
+      "scope": "general",
+      "enabled": true,
+      "url": "https://raw.githubusercontent.com/gaelamigo745/RepoMine/main/mods/visibletraders-0.0.7.1.jar"
     }
   ]
 }
